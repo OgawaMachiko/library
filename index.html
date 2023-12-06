@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <title>Display Books Data in Table Using Vue.js CDN</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.20/dist/vue.global.prod.js"></script>
+  <link rel="stylesheet" href="css/main.css"></link>
 </head>
 <body>
-    
+  <div id="app">
+    <h1>Books Data</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(book, index) in books" :key="index">
+          <td>{{ book.id }}</td>
+          <td>{{ book.title }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src ="js/main.js"></script>
 </body>
 </html>
