@@ -1,6 +1,19 @@
 {
-    "booksList": [
-      { "id": 1, "title": "リーダブルコード", "year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。" },
-      { "id": 2, "title": "リーダブルコード", "year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。" }
-    ]
-  }
+  "booksList": [
+      { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
+      { "id": 2, "title": "サービスデザイン思考", "status":"進行中","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#afeeee" },
+      { "id": 2, "title": "UIとは", "status":"予定","year": "3年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
+  ],    
+
+  "employees":[
+      {"id":1, "user_name": "田中太郎", "department":"金融ソリューション事業部", "year":2, "job":"エンジニア"}
+  ],
+  "comments":[
+      {"id":1, "user_name": "田中太郎", "star":3,"review":"早期リターンについて学習できた。"},
+      {"id":2, "user_name": "山田花子", "star":4,"review":"どんなコードが読みやすいのか理解することができた。"},
+      {"id":3, "user_name": "中西航太", "star":5,"review":"応用情報？アジャイル？いいから新人はこれ読んでこい！"}
+  ],
+  "book":[
+      {"id":1, "title":"リーダーブルコード", "author":" ダスティン・ボズウェル、 トレバー・フーシェ", "genre":"技術書", "publisher":"オライリージャパン", "place":"みなとみらい","url":"https://example.com", "status":"貸出可能"}
+  ]
+}
