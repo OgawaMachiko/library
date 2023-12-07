@@ -1,3 +1,45 @@
+.app{
+    padding: 48px;
+}
+
+.header{
+    border-bottom: solid 2px;
+    border-color: #aaaaaa;
+    margin-bottom: 10px;
+    width: 1272px;
+}
+.empName{
+    font-size: 40px;
+}
+
+.empDetail{
+    font-size: 20px;
+}
+
 .booksTable{
-    background-color: aqua;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 1272px;
+}
+
+.bookStatus{
+    border-radius: 4px;
+    width: 64px;
+    text-align: center;
+}
+
+th{
+    border: solid #aaaaaa 1px;
+    padding: 8px;
+}
+
+td{
+    border: solid #aaaaaa 1px;
+    padding: 4px;
+    padding-left: 8px;
+}
+
+.tableMain:hover{
+    background-color: #aaaaaa;
+    cursor: pointer;
 }
