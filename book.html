@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/book.css"></link>
 </head>
 <body>
-  <div id="app" class="app">
+  <div id="book" class="app">
     <button @click="returnTop(id)" class="return">戻る</button>
     <h2> {{ book.title }}</h2>
     <div class="bookData">
@@ -29,9 +29,9 @@
       </div>
       <div class="detail">
         <p>{{ book.author }}</p>
+        <p>{{ book.genre }}</p>
         <p>{{ book.publisher }}</p>
         <p>{{ book.place }}</p>
-        <p>{{ book.genre }}</p>
         <p>{{ book.url }}</p>
         <p>{{ book.status }}</p>
       </div>

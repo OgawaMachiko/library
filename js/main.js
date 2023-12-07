@@ -21,9 +21,9 @@ const app = Vue.createApp({
       home(){
         this.$router.push('./index.html')
       },
-      handleRowClick(id){
-        console.log(id);
-        window.location.href='http://127.0.0.1:3000/book.html'
+      handleRowClick(index){
+        var selectedItem = this.books[index];
+        window.location.href = 'http://127.0.0.1:3000/book.html?id=' + selectedItem.id;
       }
     }
   });
