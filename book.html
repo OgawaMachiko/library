@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Display Book Data Details in Table Using Vue.js CDN</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.20/dist/vue.global.prod.js"></script>
+  <link rel="stylesheet" href="css/book.css"></link>
+</head>
+<body>
+  <div id="app" class="app">
+    <button @click="returnTop(id)" class="return">戻る</button>
+    <h2> {{ book[0].title }}</h2>
+    <div class="bookData">
+      <div class="detailHead">
+        <p>著者</p>
+        <p>ジャンル</p>
+        <p>出版社</p>
+        <p>場所</p>
+        <p>URL</p>
+        <p>ステータス</p>
+      </div>
+      <div class="colon">
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+      </div>
+      <div class="detail">
+        <p>{{ book[0].author }}</p>
+        <p>{{ book[0].publisher }}</p>
+        <p>{{ book[0].place }}</p>
+        <p>{{ book[0].genre }}</p>
+        <p>{{ book[0].url }}</p>
+        <p>{{ book[0].status }}</p>
+      </div>
+    </div>
+    <div  v-for="(comment, index) in comments" :key="index" class="comments">
+      <table>
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr>
+            <td> 名前: {{ comment.user_name }}</td>
+            <td class="star"> 評価: {{ comment.star }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="comment">{{ comment.review }}</p>
+    </div>
+
+  </div>
+  <script src ="js/book.js"></script>
+</body>
+</html>

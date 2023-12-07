@@ -1,0 +1,53 @@
+.app{
+    padding: 48px;
+}
+
+.return{
+    border-radius: 8px;
+    font-size: 12px;
+    border: solid 2px #aaaaaa;
+    background-color: white;
+    padding: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.bookData{
+    display: flex;
+    line-height: 10px;
+    width: 1272px;
+    border-bottom: #aaaaaa solid 2px;
+    border-top: #aaaaaa solid 2px;
+    margin-bottom: 24px;
+}
+
+.detailHead{
+    color:dimgray;
+}
+
+.star{
+
+    padding-left: 20px;
+}
+
+.colon{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.tbody{
+    font-size: 13px;
+    color: dimgray;
+}
+
+.comment{
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.comments{
+    background-color: whitesmoke;
+    padding: 4px;
+    margin-bottom: 8px;
+}
