@@ -2,7 +2,7 @@
   "booksList": [
       { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
       { "id": 2, "title": "サービスデザイン思考", "status":"進行中","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#afeeee" },
-      { "id": 2, "title": "UIとは", "status":"予定","year": "3年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
+      { "id": 3, "title": "UIとは", "status":"予定","year": "3年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
   ],    
 
   "employees":[
