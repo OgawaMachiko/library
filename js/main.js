@@ -2,23 +2,16 @@ const app = Vue.createApp({
     data() {
       return {
         books: [],
-        employees:[]
+        employee:null,
+        employeeId:1,
       };
     },
     mounted() {
-      fetch('http://localhost:3000/employees') 
+      fetch(`http://localhost:3000/employees/${this.employeeId}`) 
         .then(response => response.json())
         .then(data => {
-          this.employees = data; 
-        })
-        .catch(error => {
-          console.error('Error fetching data:', error);
-        });
-
-        fetch('http://localhost:3000/booksList') 
-        .then(response => response.json())
-        .then(data => {
-          this.books = data; 
+          this.employee = data; 
+          this.books = data.booksList; 
         })
         .catch(error => {
           console.error('Error fetching data:', error);
@@ -29,7 +22,8 @@ const app = Vue.createApp({
         this.$router.push('./index.html')
       },
       handleRowClick(id){
-        window.location.href='http://127.0.0.1:3000/index.html'
+        console.log(id);
+        window.location.href='http://127.0.0.1:3000/book.html'
       }
     }
   });

@@ -9,7 +9,10 @@
 <body>
   <div id="app" class="app">
     <div class="header">
-      <div v-for="(employee,index) in employees" :key="index">
+      <div class="menuTab">
+        <button>マイページ</button>
+      </div>
+      <div>
         <div class="empName">{{employee.user_name}}</div>
         <div class="empDetail">
           <div>{{employee.department}}</div>
@@ -24,7 +27,7 @@
             <th>進捗状況</th>
             <th>年次</th>
             <th>職種</th>
-            <th>評価</th>
+            <th>評価☆</th>
             <th>コメント</th>
           </tr>
           <tr v-for="(book,index) in books" :key="index" v-on:click="handleRowClick(index)" class="tableMain">

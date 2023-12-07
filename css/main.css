@@ -8,6 +8,14 @@
     margin-bottom: 10px;
     width: 1272px;
 }
+
+.menuTab button{
+    background: #ffffff;
+    border: none;
+    border-bottom: solid 2px #aaaaaa;
+    margin-right: 8px;
+    cursor: pointer;
+}
 .empName{
     font-size: 40px;
 }
