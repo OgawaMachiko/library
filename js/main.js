@@ -2,6 +2,7 @@ const app = Vue.createApp({
     data() {
       return {
         books: [],
+        goals: [],
         employee:null,
         employeeId:1,
       };
@@ -11,7 +12,8 @@ const app = Vue.createApp({
         .then(response => response.json())
         .then(data => {
           this.employee = data; 
-          this.books = data.booksList; 
+          this.goals = data.goalList; 
+          this.books = data.goalList[0].bookList
         })
         .catch(error => {
           console.error('Error fetching data:', error);
