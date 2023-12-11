@@ -5,16 +5,17 @@ const app = Vue.createApp({
         goals:[],
         employee:null,
         employeeId:1,
-        goalListId:1     
+        goalListId:0
       };
     },
     mounted() {
+      
       fetch(`http://localhost:3000/employees/${this.employeeId}`) 
         .then(response => response.json())
         .then(data => {
           this.goals = data.goalList;
           this.employee = data; 
-          this.books = data.goalList[0].booksList; //この0にgoalListIdを代入？
+          this.books = data.goalList[`${this.goalListId}`].booksList; //この0にgoalListIdを代入？
         })
         .catch(error => {
           console.error('Error fetching data:', error);
