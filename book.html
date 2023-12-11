@@ -39,6 +39,7 @@
         <p>{{ book.status }}</p>
       </div>
     </div>
+    <div>■レビュー</div>
     <div  v-for="(comment, index) in comments" :key="index" class="comments">
       <table>
         <thead>
@@ -53,6 +54,24 @@
         </tbody>
       </table>
       <p class="comment">{{ comment.review }}</p>
+    </div>
+    <div>■解説</div>
+    <div  v-for="(chapter, index) in explanations" :key="index" >
+      <p>・{{ chapter.chap_id }}章</p>
+      <div v-for="(explanation, index1) in explanations[index].chap_explanations" :key="index1" class="comments">
+      <table>
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr>
+            <td>名前：{{explanation.user_name}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="comment">{{ explanation.explanation }}</p>
+    </div>
     </div>
 
   </div>

@@ -3,6 +3,7 @@ const book = Vue.createApp({
       return {
         book: null,
         comments: [],
+        explanations: [],
         bookId:null
       };
     },
@@ -15,6 +16,7 @@ const book = Vue.createApp({
         .then(data => {
           this.book = data; 
           this.comments = data.comments; 
+          this.explanations = data.explanations;
         })
         .catch(error => {
           console.error('Error fetching data:', error);
