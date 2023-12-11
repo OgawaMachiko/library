@@ -10,7 +10,7 @@
     ]},
     { "id":2, "goal":"システムエンジニアへのキャリアチェンジ",
     "booksList": [
-      { "id": 1, "title": "人月の神話", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
+      { "id": 4, "title": "人月の神話", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
       { "id": 2, "title": "サービスデザイン思考", "status":"進行中","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#afeeee" },
       { "id": 3, "title": "インタフェースデザインの心理学", "status":"予定","year": "3年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
   ]}]},
@@ -41,6 +41,12 @@
         {"id":1, "user_name": "田中太郎", "star":4,"review":"心理学をデザインに活かしたいと考えている人には強くおすすめできる一冊。"},
         {"id":2, "user_name": "山田花子", "star":4,"review":"オペラント条件付けを基にどんなタイミングで報酬を与えるのか理解できた"},
         {"id":3, "user_name": "中西航太", "star":5,"review":"1項目あたり2〜3ページと読みやすく、トイレに置いて読めます。"}
+    ]},
+      {"id":4, "title":"人月の神話", "author":" Dustin Boswell, Trevor Foucher", "genre":"技術書", "publisher":"オライリージャパン", "place":"みなとみらい","url":"https://example.com", "status":"貸出可能",  
+        "comments":[
+          {"id":1, "user_name": "田中太郎", "star":3,"review":"早期リターンについて学習できた。"},
+          {"id":2, "user_name": "山田花子", "star":4,"review":"どんなコードが読みやすいのか理解することができた。"},
+          {"id":3, "user_name": "中西航太", "star":5,"review":"応用情報？アジャイル？いいから新人はこれ読んでこい！"}
     ]}
     ]
 }
