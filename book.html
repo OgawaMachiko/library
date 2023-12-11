@@ -9,6 +9,12 @@
 <body>
   <div id="book" class="app">
     <button @click="goBack()" class="return">戻る</button>
+    <div v-on:click="handleRowClickEmp(0)" class="menuTab">
+      <button>マイページ</button>
+    </div>
+    <div class="menuTab" v-on:click="handleRowClickAllEmp()">
+      <button>検索ページ</button>
+    </div>
     <h2> {{ book.title }}</h2>
     <div class="bookData">
       <div>

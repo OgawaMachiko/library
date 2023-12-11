@@ -49,6 +49,9 @@
     font-size: 13px;
     color: dimgray;
 }
+.user_name{
+    cursor: pointer;
+}
 
 .comment{
     margin-left: 20px;
