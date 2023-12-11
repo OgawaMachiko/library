@@ -62,8 +62,18 @@
         {"id":1, "user_name": "田中太郎", "star":4,"review":"心理学をデザインに活かしたいと考えている人には強くおすすめできる一冊。"},
         {"id":2, "user_name": "山田花子", "star":4,"review":"オペラント条件付けを基にどんなタイミングで報酬を与えるのか理解できた"},
         {"id":3, "user_name": "中西航太", "star":5,"review":"1項目あたり2〜3ページと読みやすく、トイレに置いて読めます。"}
-    ]},
-      {"id":4, "title":"人月の神話", "author":" Dustin Boswell, Trevor Foucher", "genre":"技術書", "publisher":"オライリージャパン", "place":"みなとみらい","url":"https://example.com", "status":"貸出可能",  
+    ],
+    "explanations":[
+        {"chap_id":1, "chap_name":"理解しやすいコード", "chap_explanations":[
+          {"id":1, "user_name":"田中太郎", "explanation":"「優れた」コードとは読みやすいコードである。" }
+        ]},
+        {"chap_id":2, "chap_name":"名前に情報を詰め込む", "chap_explanations":[
+          {"id":2, "user_name":"山田花子", "explanation":"具体的な名前を用いて、情報を詰め込む。汎用的・曖昧な命名を避ける。" },
+          {"id":3, "user_name":"中西航太", "explanation":"スコープの大きな変数には長い名前を付ける。" }
+        ]}
+    ]
+    },
+      {"id":4, "title":"人月の神話", "author":" Dustin Boswell, Trevor Foucher", "genre":"技術書", "publisher":"オライリージャパン", "place":"みなとみらい","url":"https://example.com", "status":"貸出可能",  "image":"image4.jpg", 
         "comments":[
           {"id":1, "user_name": "田中太郎", "star":3,"review":"早期リターンについて学習できた。"},
           {"id":2, "user_name": "山田花子", "star":4,"review":"どんなコードが読みやすいのか理解することができた。"},
