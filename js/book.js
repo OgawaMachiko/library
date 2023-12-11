@@ -3,7 +3,9 @@ const book = Vue.createApp({
       return {
         book: null,
         comments: [],
-        bookId:null
+        explanations: [],
+        bookId:1,
+        employeeId:1
       };
     },
     mounted() {
@@ -15,6 +17,7 @@ const book = Vue.createApp({
         .then(data => {
           this.book = data; 
           this.comments = data.comments; 
+          this.explanations = data.explanations;
         })
         .catch(error => {
           console.error('Error fetching data:', error);
@@ -24,6 +27,15 @@ const book = Vue.createApp({
         returnTop(id){
             window.location.href="http://127.0.0.1:3000/index.html"
         },
+        handleRowClickEmp(employeeId){
+          window.location.href = 'http://127.0.0.1:3000/index.html?id=' + employeeId;
+        },
+        handleRowClickAllEmp(){
+          window.location.href = 'http://127.0.0.1:3000/employee.html';
+        },
+        goBack() {
+          window.history.back();
+        },  
     },
   });
   book.mount('#book');

@@ -1,6 +1,16 @@
 .app{
     padding: 48px;
 }
+.return{
+    border-radius: 8px;
+    font-size: 12px;
+    border: solid 2px #aaaaaa;
+    background-color: white;
+    padding: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+}
 
 .header{
     border-bottom: solid 2px;
@@ -10,12 +20,14 @@
 }
 
 .menuTab button{
+    float: right;
     background: #ffffff;
     border: none;
     border-bottom: solid 2px #aaaaaa;
     margin-right: 8px;
     cursor: pointer;
 }
+
 .empName{
     font-size: 40px;
 }

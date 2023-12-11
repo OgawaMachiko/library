@@ -8,6 +8,11 @@
 </head>
 <body>
   <div id="employee" class="app">
+    <button @click="goBack()" class="return">戻る</button>
+    <div v-on:click="handleRowClickEmp(0)" class="menuTab">
+      <button>マイページ</button>
+    </div>
+
     <div>
         <p>職種</p>
         <input type="checkbox" id="job1" v-model="selectedJobs" value="エンジニア">
@@ -41,7 +46,7 @@
             </tr>
             <tr v-for="(employee,index) in sortedEmployees" :key="index" 
             v-on:click="handleRowClickEmp(employee.id)" class="tableMain">
-                <td>{{ employee.user_name }}</td>
+                <td class="user_name">{{ employee.user_name }}</td>
                 <td>{{ employee.job }}</div></td>
                 <td>{{ employee.year }}</td>
                 <td>{{ employee.bookCount }}</td>
