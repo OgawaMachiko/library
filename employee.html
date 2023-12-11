@@ -9,10 +9,27 @@
 <body>
   <div id="employee" class="app">
     <div>
-        <!-- 職種でソート -->
+        <p>職種</p>
+        <input type="checkbox" id="job1" v-model="selectedJobs" value="エンジニア">
+        <label for="job1">エンジニア</label>
+        <input type="checkbox" id="job2" v-model="selectedJobs" value="デザイナー">
+        <label for="job2">デザイナー</label>
+        <input type="checkbox" id="job3" v-model="selectedJobs" value="営業">
+        <label for="job3">営業</label>
     </div>
+
     <div>
-        <!-- 年次でソート -->
+        <label for="sortYear">From</label>
+        <select id="sortYearFrom" v-model="fromYear" @change="sortEmployees">
+            <option value="">--</option>
+            <option v-for="year in availableYears" :value="year">{{ year }}</option>
+        </select>
+    
+        <label for="sortYear">To</label>
+        <select id="sortYearTo" v-model="toYear" @change="sortEmployees">
+            <option value="">--</option>
+            <option v-for="year in availableYears" :value="year">{{ year }}</option>
+        </select>
     </div>
     <div>
         <table class="booksTable">
@@ -22,7 +39,7 @@
               <th>年次</th>
               <th>読んだ本数</th>
             </tr>
-            <tr v-for="(employee,index) in employees" :key="index" 
+            <tr v-for="(employee,index) in sortedEmployees" :key="index" 
             v-on:click="handleRowClickEmp(employee.id)" class="tableMain">
                 <td>{{ employee.user_name }}</td>
                 <td>{{ employee.job }}</div></td>

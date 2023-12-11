@@ -21,7 +21,7 @@ const app = Vue.createApp({
       fetch(`http://localhost:3000/employees/`)
         .then(response => response.json())
         .then(data => {
-          this.employee = data[`${this.employeeId-1}`]; 
+          this.employee = data[`${this.employeeId}`]; 
         })
         .catch(error => {
           console.error('Error fetching data:', error);
