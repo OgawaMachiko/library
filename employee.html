@@ -29,7 +29,7 @@
             </tr>
             <tr v-for="(employee,index) in employees" :key="index" 
             v-on:click="handleRowClickEmp(employee.id)" class="tableMain">
-                <td>{{ employee.user_name }}</td>
+                <td class="user_name">{{ employee.user_name }}</td>
                 <td>{{ employee.job }}</div></td>
                 <td>{{ employee.year }}</td>
                 <td>{{ employee.bookCount }}</td>

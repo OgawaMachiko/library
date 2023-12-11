@@ -13,6 +13,15 @@
     cursor: pointer;
 }
 
+.menuTab button{
+    float: right;
+    background: #ffffff;
+    border: none;
+    border-bottom: solid 2px #aaaaaa;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
 .bookData{
     display: flex;
     line-height: 10px;
