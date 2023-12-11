@@ -8,7 +8,8 @@
       { "id": 2, "title": "サービスデザイン思考", "status":"進行中","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#afeeee"},
       { "id": 3, "title": "インタフェースデザインの心理学", "status":"予定","year": "3年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
   ]}]},
-      {"id":1, "user_name": "田中太郎", "department":"金融ソリューション事業部", "year":2, "job":"エンジニア", "bookCount":6,
+
+    {"id":1, "user_name": "田中太郎", "department":"金融ソリューション事業部", "year":2, "job":"エンジニア", "bookCount":6,
       "goalList":[{ "id":1, "goal":"デザインエンジニアへのキャリアチェンジ",
       "booksList": [
         { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
@@ -21,56 +22,41 @@
       { "id": 2, "title": "サービスデザイン思考", "status":"進行中","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#afeeee" },
       { "id": 3, "title": "インタフェースデザインの心理学", "status":"予定","year": "3年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
   ]}]},
-      {"id":2, "user_name": "山田花子", "department":"テレコムソリューション事業部", "year":1, "job":"エンジニア", "bookCount":3,
-      "goalList":[{ "id":1, "goal":"デザインエンジニアへのキャリアチェンジ",
-      "booksList": [
-        { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
-        { "id": 2, "title": "サービスデザイン思考", "status":"進行中","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#afeeee"},
-        { "id": 3, "title": "インタフェースデザインの心理学", "status":"予定","year": "3年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
-    ]}]},
+
+    {"id":2, "user_name": "山田花子", "department":"産業事業部", "year":8, "job":"営業", "bookCount":4,
+    "goalList":[{ "id":1, "goal":"エンジニアへのキャリアチェンジ",
+    "booksList": [
+      { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"営業","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
+      { "id": 2, "title": "サービスデザイン思考", "status":"完了","year": "4年目","job":"営業","star":5,"review":"デザインの基礎が学習できる。","color":"#ffc0cb"},
+      { "id": 3, "title": "インタフェースデザインの心理学", "status":"完了","year": "3年目","job":"営業","star":5,"review":"心理学的からデザインへのアプローチがわかる" ,"color":"#ffc0cb"},
+      { "id": 4, "title": "人月の神話", "status":"予定","year": "8年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
+  ]}]},
+
     {"id":3, "user_name": "中西航太", "department":"テレコムソリューション事業部", "year":8, "job":"エンジニア", "bookCount":4,
     "goalList":[{ "id":1, "goal":"スクラムマスターへのキャリアアップ",
     "booksList": [
       { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
-      { "id": 2, "title": "サービスデザイン思考", "status":"完了","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#afeeee"},
-      { "id": 3, "title": "インタフェースデザインの心理学", "status":"完了","year": "3年目","job":"","star":5,"review":"" ,"color":"#d3d3d3"},
-      { "id": 4, "title": "人月の神話", "status":"予定","year": "4年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
+      { "id": 2, "title": "サービスデザイン思考", "status":"完了","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#ffc0cb"},
+      { "id": 3, "title": "インタフェースデザインの心理学", "status":"完了","year": "3年目","job":"","star":5,"review":"" ,"color":"#ffc0cb"},
+      { "id": 4, "title": "人月の神話", "status":"予定","year": "9年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
 
   ]}]}
       ],
   
   "book":[
       {"id":1, "title":"リーダーブルコード", "author":" Dustin Boswell, Trevor Foucher", "genre":"技術書", "publisher":"オライリージャパン", "place":"みなとみらい","url":"https://example.com", "status":"貸出可能", "image":"image1.jpg",  
+      
       "comments":[
         {"id":1, "user_name": "田中太郎", "star":3,"review":"早期リターンについて学習できた。"},
         {"id":2, "user_name": "山田花子", "star":4,"review":"どんなコードが読みやすいのか理解することができた。"},
         {"id":3, "user_name": "中西航太", "star":5,"review":"応用情報？アジャイル？いいから新人はこれ読んでこい！"}
-      ],
-      "explanations":[
-          {"chap_id":1, "chap_name":"理解しやすいコード", "chap_explanations":[
-            {"id":1, "user_name":"田中太郎", "explanation":"「優れた」コードとは読みやすいコードである。" }
-          ]},
-          {"chap_id":2, "chap_name":"名前に情報を詰め込む", "chap_explanations":[
-            {"id":2, "user_name":"山田花子", "explanation":"具体的な名前を用いて、情報を詰め込む。汎用的・曖昧な命名を避ける。" },
-            {"id":3, "user_name":"中西航太", "explanation":"スコープの大きな変数には長い名前を付ける。" }
-          ]}
-      ]
-    },
+    ]},
       {"id":2, "title":"サービスデザイン思考", "author":" 井登友一", "genre":"技術書", "publisher":"NTT出版", "place":"虎ノ門","url":"https://example.com", "status":"貸出不可", "image":"image2.jpg",
       "comments":[
         {"id":1, "user_name": "田中太郎", "star":5,"review":"「サービスデザイン思考」で「これからのビジネスを考える」事が学べる本でした。"},
         {"id":2, "user_name": "山田花子", "star":3,"review":"サービスデザインの概要や実務に基づいた内容が記述されていてわかりやすい。"},
         {"id":3, "user_name": "中西航太", "star":3,"review":"「縦書き」が良いと感じた。"}
-    ],
-    "explanations":[
-        {"chap_id":1, "chap_name":"理解しやすいコード", "chap_explanations":[
-          {"id":1, "user_name":"田中太郎", "explanation":"「優れた」コードとは読みやすいコードである。" }
-        ]},
-        {"chap_id":2, "chap_name":"名前に情報を詰め込む", "chap_explanations":[
-          {"id":2, "user_name":"山田花子", "explanation":"具体的な名前を用いて、情報を詰め込む。汎用的・曖昧な命名を避ける。" }
-        ]}
-    ]
-    },
+    ]},
       {"id":3, "title":"インタフェースデザインの心理学", "author":" Susan Weinschenk", "genre":"技術書", "publisher":"オライリージャパン", "place":"新川","url":"https://example.com", "status":"貸出可能", "image":"image3.jpg",
       "comments":[
         {"id":1, "user_name": "田中太郎", "star":4,"review":"心理学をデザインに活かしたいと考えている人には強くおすすめできる一冊。"},
@@ -92,15 +78,6 @@
           {"id":1, "user_name": "田中太郎", "star":3,"review":"早期リターンについて学習できた。"},
           {"id":2, "user_name": "山田花子", "star":4,"review":"どんなコードが読みやすいのか理解することができた。"},
           {"id":3, "user_name": "中西航太", "star":5,"review":"応用情報？アジャイル？いいから新人はこれ読んでこい！"}
-    ],
-    "explanations":[
-        {"chap_id":1, "chap_name":"理解しやすいコード", "chap_explanations":[
-          {"id":1, "user_name":"田中太郎", "explanation":"「優れた」コードとは読みやすいコードである。" }
-        ]},
-        {"chap_id":2, "chap_name":"名前に情報を詰め込む", "chap_explanations":[
-          {"id":2, "user_name":"山田花子", "explanation":"具体的な名前を用いて、情報を詰め込む。汎用的・曖昧な命名を避ける。" }
-        ]}
-    ]
-    }
+    ]}
     ]
 }
