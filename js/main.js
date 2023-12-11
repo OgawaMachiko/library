@@ -20,7 +20,7 @@ const app = Vue.createApp({
       fetch(`http://localhost:3000/employees/`)
         .then(response => response.json())
         .then(data => {
-          this.employee = data[`${this.employeeId-1}`]; 
+          this.employee = data[`${this.employeeId}`]; 
         })
         .catch(error => {
           console.error('Error fetching data:', error);
@@ -42,6 +42,12 @@ const app = Vue.createApp({
       handleRowClick(bookId){
         window.location.href = 'http://127.0.0.1:3000/book.html?id=' + bookId;
 
+      },
+      handleRowClickEmp(employeeId){
+        window.location.href = 'http://127.0.0.1:3000/index.html?id=' + employeeId;
+      },
+      handleRowClickAllEmp(){
+        window.location.href = 'http://127.0.0.1:3000/employee.html';
       },
       goBack() {
         window.history.back();

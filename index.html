@@ -9,10 +9,13 @@
 <body>
   <div id="app" class="app">
     <button @click="goBack()" class="return">戻る</button>
+    <div v-on:click="handleRowClickEmp(0)" class="menuTab">
+      <button>マイページ</button>
+    </div>
+    <div class="menuTab" v-on:click="handleRowClickAllEmp()">
+      <button>検索ページ</button>
+    </div>
     <div class="header">
-      <div class="menuTab">
-        <!-- <button>マイページ</button> -->
-      </div>
       <div>
         <div class="empName">{{employee.user_name}}</div>
         <div class="empDetail">

@@ -8,6 +8,11 @@
 </head>
 <body>
   <div id="employee" class="app">
+    <button @click="goBack()" class="return">戻る</button>
+    <div v-on:click="handleRowClickEmp(0)" class="menuTab">
+      <button>マイページ</button>
+    </div>
+
     <div>
         <!-- 職種でソート -->
     </div>

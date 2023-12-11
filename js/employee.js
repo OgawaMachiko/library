@@ -26,8 +26,10 @@ const app = Vue.createApp({
       },
       handleRowClickEmp(employeeId){
         window.location.href = 'http://127.0.0.1:3000/index.html?id=' + employeeId;
-
-      }
+      },
+      goBack() {
+        window.history.back();
+      }, 
     }
   });
   app.mount('#employee');

@@ -9,6 +9,7 @@
     padding: 4px;
     padding-left: 16px;
     padding-right: 16px;
+    cursor: pointer;
 }
 
 .header{
@@ -19,12 +20,14 @@
 }
 
 .menuTab button{
+    float: right;
     background: #ffffff;
     border: none;
     border-bottom: solid 2px #aaaaaa;
     margin-right: 8px;
     cursor: pointer;
 }
+
 .empName{
     font-size: 40px;
 }
