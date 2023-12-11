@@ -21,8 +21,8 @@
       </div>
     </div>
     <div class="main">
-      <!-- ↓v-forで回す予定 -->
-      <p>▼目的： {{ goals[0].goal }}</p>       
+      <div v-for="(goal,index1) in employee.goalList" :key="index1">
+      <p>■目的： {{ employee.goalList[index1].goal}}</p>    
       <table class="booksTable">
           <tr class="tableHeader">
             <th>タイトル</th>
@@ -32,8 +32,8 @@
             <th>評価☆</th>
             <th>コメント</th>
           </tr>
-          <tr v-for="(book,index) in books" :key="index" v-on:click="handleRowClick(index)" class="tableMain">
-              <td>{{ book.title }}</td>
+          <tr v-for="(book,index) in employee.goalList[index1].booksList"  :key="index" v-on:click="handleRowClick(book.id)" class="tableMain">
+              <td>{{ employee.goalList[index1].booksList[index].title }}</td>
               <td><div class="bookStatus" :style="{backgroundColor: book.color}">{{ book.status }}</div></td>
               <td>{{ book.year }}</td>
               <td>{{ book.job }}</td>
@@ -41,6 +41,7 @@
               <td>{{ book.review }}</td>
           </tr>    
       </table>
+      </div>
     </div>
     <div class="footer">
    
