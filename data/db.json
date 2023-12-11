@@ -87,7 +87,7 @@
         ]}
     ]
     },
-      {"id":4, "title":"人月の神話", "author":" Dustin Boswell, Trevor Foucher", "genre":"技術書", "publisher":"オライリージャパン", "place":"みなとみらい","url":"https://example.com", "status":"貸出可能",  
+      {"id":4, "title":"人月の神話", "author":" Dustin Boswell, Trevor Foucher", "genre":"技術書", "publisher":"オライリージャパン", "place":"みなとみらい","url":"https://example.com", "status":"貸出可能",  "image":"image4.jpg", 
         "comments":[
           {"id":1, "user_name": "田中太郎", "star":3,"review":"早期リターンについて学習できた。"},
           {"id":2, "user_name": "山田花子", "star":4,"review":"どんなコードが読みやすいのか理解することができた。"},
