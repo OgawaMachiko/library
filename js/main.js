@@ -3,8 +3,9 @@ const app = Vue.createApp({
       return {
         goals:[],
         employee:null,
-        employeeId:0,
-        goalListId:0
+        employeeId:1,
+        goalListId:0,
+        bookId:1
       };
     },
     dataBook() {
@@ -13,8 +14,10 @@ const app = Vue.createApp({
       };
     },
     mounted() {
+      var params = new URLSearchParams(window.location.search);
+      this.employeeId = params.get('id');
       
-      fetch(`http://localhost:3000/employees`)
+      fetch(`http://localhost:3000/employees/`)
         .then(response => response.json())
         .then(data => {
           this.employee = data[`${this.employeeId}`]; 

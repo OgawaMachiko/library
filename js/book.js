@@ -4,7 +4,8 @@ const book = Vue.createApp({
         book: null,
         comments: [],
         explanations: [],
-        bookId:null
+        bookId:1,
+        employeeId:1
       };
     },
     mounted() {
@@ -26,6 +27,10 @@ const book = Vue.createApp({
         returnTop(id){
             window.location.href="http://127.0.0.1:3000/index.html"
         },
+        handleRowClickEmp(employeeId){
+          window.location.href = 'http://127.0.0.1:3000/index.html?id=' + employeeId;
+  
+        }
     },
   });
   book.mount('#book');

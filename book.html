@@ -58,7 +58,8 @@
     <div>■解説</div>
     <div  v-for="(chapter, index) in explanations" :key="index" >
       <p>・{{ chapter.chap_id }}章</p>
-      <div v-for="(explanation, index1) in explanations[index].chap_explanations" :key="index1" class="comments">
+      <div v-for="(explanation, index1) in explanations[index].chap_explanations" :key="index1" 
+        v-on:click="handleRowClickEmp(explanation.id)" class="comments">
       <table>
         <thead>
           <tr>
