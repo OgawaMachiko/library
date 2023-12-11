@@ -11,6 +11,9 @@
     <button @click="returnTop(id)" class="return">戻る</button>
     <h2> {{ book.title }}</h2>
     <div class="bookData">
+      <div>
+        <img v-bind:src="'images/' + book.image" alt="bookImage" class="img">
+      </div>
       <div class="detailHead">
         <p>著者</p>
         <p>ジャンル</p>
