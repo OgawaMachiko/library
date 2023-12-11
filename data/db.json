@@ -1,7 +1,7 @@
 {  
 
   "employees":[
-      {"id":1, "user_name": "田中太郎", "department":"金融ソリューション事業部", "year":2, "job":"エンジニア", 
+      {"id":1, "user_name": "田中太郎", "department":"金融ソリューション事業部", "year":2, "job":"エンジニア", "bookCount":6,
       "goalList":[{ "id":1, "goal":"デザインエンジニアへのキャリアチェンジ",
       "booksList": [
         { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
@@ -14,20 +14,22 @@
       { "id": 2, "title": "サービスデザイン思考", "status":"進行中","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#afeeee" },
       { "id": 3, "title": "インタフェースデザインの心理学", "status":"予定","year": "3年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
   ]}]},
-      {"id":2, "user_name": "山田花子", "department":"テレコムソリューション事業部", "year":1, "job":"エンジニア", 
+      {"id":2, "user_name": "石倉加菜子", "department":"テレコムソリューション事業部", "year":1, "job":"エンジニア", "bookCount":3,
       "goalList":[{ "id":1, "goal":"デザインエンジニアへのキャリアチェンジ",
       "booksList": [
         { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
         { "id": 2, "title": "サービスデザイン思考", "status":"進行中","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#afeeee"},
         { "id": 3, "title": "インタフェースデザインの心理学", "status":"予定","year": "3年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
     ]}]},
-      {"id":3, "user_name": "中西航太", "department":"テレコムソリューション事業部", "year":1, "job":"エンジニア", 
-      "goalList":[{ "id":1, "goal":"デザインエンジニアへのキャリアチェンジ",
-      "booksList": [
-        { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
-        { "id": 2, "title": "サービスデザイン思考", "status":"進行中","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#afeeee"},
-        { "id": 3, "title": "インタフェースデザインの心理学", "status":"予定","year": "3年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
-    ]}]}
+    {"id":3, "user_name": "中西航太", "department":"テレコムソリューション事業部", "year":8, "job":"エンジニア", "bookCount":4,
+    "goalList":[{ "id":1, "goal":"スクラムマスターへのキャリアアップ",
+    "booksList": [
+      { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
+      { "id": 2, "title": "サービスデザイン思考", "status":"完了","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#afeeee"},
+      { "id": 3, "title": "インタフェースデザインの心理学", "status":"完了","year": "3年目","job":"","star":5,"review":"" ,"color":"#d3d3d3"},
+      { "id": 4, "title": "人月の神話", "status":"予定","year": "4年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
+
+  ]}]}
       ],
   
   "book":[
