@@ -4,7 +4,6 @@ const app = Vue.createApp({
         goals:[],
         employee:null,
         employeeId:null,
-        goalListId:0
       };
     },
     dataBook() {
@@ -43,7 +42,10 @@ const app = Vue.createApp({
       handleRowClick(bookId){
         window.location.href = 'http://127.0.0.1:3000/book.html?id=' + bookId;
 
-      }
+      },
+      goBack() {
+        window.history.back();
+      }, 
     }
   });
   app.mount('#app');
