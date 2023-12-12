@@ -6,7 +6,8 @@ const app = Vue.createApp({
       selectedJobs: [],
       fromYear: null,
       toYear: null,
-      availableYears: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      availableYears: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      isFilterCleared: true,
     };
   },
 
@@ -48,27 +49,6 @@ const app = Vue.createApp({
 
       this.employees = filteredEmployees;
     },
-    // searchEmployees() {
-    //   this.getEmployees()
-
-    //   let filteredEmployees = [...this.employees];
-    //   if (this.fromYear) {
-    //     filteredEmployees = filteredEmployees.filter(employee => employee.year >= this.fromYear);
-    //   }
-    //   if (this.toYear) {
-    //     filteredEmployees = filteredEmployees.filter(employee => employee.year <= this.toYear);
-    //   }
-
-    //   if (this.selectedJobs.length > 0) {
-    //     filteredEmployees = filteredEmployees.filter(employee => this.selectedJobs.includes(employee.job));
-    //   }
-
-    //   // filteredEmployees.sort((a, b) => a.year - b.year);
-    //   this.employees = filteredEmployees;
-
-
-
-    // }
     async searchEmployees() {
       try {
         // データを取得
@@ -94,11 +74,19 @@ const app = Vue.createApp({
         console.error('Error fetching or filtering data:', error);
       }
     },
+    clearFilters() {
+      this.fromYear = null;
+      this.toYear = null;
+      this.selectedJobs = [];
+      this.isFilterCleared = true;
+      this.getEmployees();
+    },
 
   },
 
   computed: {
     sortedEmployees() {
+      this.isFilterCleared = false;
       if (this.selectedJobs.length === 0) {
         return this.employees;
       } else {
