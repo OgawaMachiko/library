@@ -33,7 +33,7 @@
             <th>コメント</th>
           </tr>
           <tr v-for="(book,index) in employee.goalList[index1].booksList"  :key="index" v-on:click="handleRowClick(book.id)" class="tableMain">
-              <td>{{ employee.goalList[index1].booksList[index].title }}</td>
+              <td>{{ book.title }}</td>
               <td><div class="bookStatus" :style="{backgroundColor: book.color}">{{ book.status }}</div></td>
               <td>{{ book.year }}</td>
               <td>{{ book.job }}</td>

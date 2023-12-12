@@ -13,17 +13,19 @@ const app = Vue.createApp({
     },
     mounted() {
       var params = new URLSearchParams(window.location.search);
-      this.employeeId = params.get('id');
+      this.employeeId = parseInt(params.get('id'));
       console.log(this.employeeId)
 
 
       fetch(`http://localhost:3000/employees/`)
         .then(response => response.json())
         .then(data => {
-          this.employee = data[`${this.employeeId}`]; 
-        })
-        .catch(error => {
-          console.error('Error fetching data:', error);
+          const matchingEmployee = data.find(employee => employee.id === this.employeeId);
+          if (matchingEmployee) {
+            this.employee = matchingEmployee;
+          } else {
+            console.error('Employee not found.');
+          }
         })
       fetch(`http://localhost:3000/book`)
         .then(response => response.json())

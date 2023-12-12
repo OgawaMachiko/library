@@ -4,20 +4,25 @@ const book = Vue.createApp({
         book: null,
         comments: [],
         explanations: [],
-        bookId:1,
-        employeeId:1
+        bookId:null,
+        employeeId:null
       };
     },
     mounted() {
       var params = new URLSearchParams(window.location.search);
-      this.bookId = params.get('id');
+      this.bookId = parseInt(params.get('id'));
 
-      fetch(`http://localhost:3000/book/${this.bookId}`) 
+      fetch(`http://localhost:3000/book`) 
         .then(response => response.json())
         .then(data => {
-          this.book = data; 
-          this.comments = data.comments; 
-          this.explanations = data.explanations;
+          const matchingBook = data.find(book => book.id === this.bookId);
+          if (matchingBook) {
+            this.book = matchingBook;
+            this.comments = matchingBook.comments;
+            this.explanations = matchingBook.explanations
+          } else {
+            console.error('Book not found.');
+          }
         })
         .catch(error => {
           console.error('Error fetching data:', error);
