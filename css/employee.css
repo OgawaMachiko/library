@@ -44,27 +44,11 @@
     margin-bottom: 5px;
 }
 
-.bookData{
-    display: flex;
-    line-height: 10px;
+.header{
+    border-bottom: solid 2px;
+    border-color: #aaaaaa;
+    margin-bottom: 10px;
     width: 1272px;
-    border-bottom: #aaaaaa solid 2px;
-    border-top: #aaaaaa solid 2px;
-    margin-bottom: 24px;
-}
-
-.detailHead{
-    color:dimgray;
-}
-
-.star{
-
-    padding-left: 20px;
-}
-
-.colon{
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
 .tbody{
@@ -75,20 +59,45 @@
     cursor: pointer;
 }
 
-.comment{
-    margin-left: 20px;
-    margin-top: 0px;
-    margin-bottom: 15px;
+.employeesTable{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 400px;
 }
 
-.comments{
-    background-color: whitesmoke;
-    padding: 4px;
+.filter{
+    display: flex;
+    border-bottom: solid 2px;
+    border-color: #aaaaaa;
     margin-bottom: 8px;
 }
 
-.img{
-    width : 160px;
-    height : 240px;
-    padding: 10px;
+.year{
+    margin-right: 24px;
+}
+
+.filterButton{
+    margin-left: 36px;
+    margin-top: 94px;
+}
+
+.employees{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.tableMain:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+th{
+    border: solid #aaaaaa 1px;
+    padding: 8px;
+}
+
+td{
+    border: solid #aaaaaa 1px;
+    padding: 4px;
+    padding-left: 8px;
 }
