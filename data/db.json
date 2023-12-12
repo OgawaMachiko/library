@@ -23,7 +23,7 @@
       { "id": 3, "title": "インタフェースデザインの心理学", "status":"予定","year": "3年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
   ]}]},
 
-    {"id":2, "user_name": "山田花子", "department":"産業事業部", "year":8, "job":"営業", "bookCount":4,
+    {"id":2, "user_name": "山田花子", "department":"産業ソリューション事業本部", "year":8, "job":"営業", "bookCount":4,
     "goalList":[{ "id":1, "goal":"エンジニアへのキャリアチェンジ",
     "booksList": [
       { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"営業","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
@@ -37,48 +37,128 @@
     "booksList": [
       { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"エンジニア","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
       { "id": 2, "title": "サービスデザイン思考", "status":"完了","year": "2年目","job":"エンジニア","star":5,"review":"デザインの基礎が学習できる。","color":"#ffc0cb"},
-      { "id": 3, "title": "インタフェースデザインの心理学", "status":"完了","year": "3年目","job":"","star":5,"review":"" ,"color":"#ffc0cb"},
+      { "id": 3, "title": "インタフェースデザインの心理学", "status":"完了","year": "3年目","job":"エンジニア","star":5,"review":"インターフェースデザインの重要性がわかった。" ,"color":"#ffc0cb"},
       { "id": 4, "title": "人月の神話", "status":"予定","year": "9年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
 
   ]}]},
 
-  {"id":4, "user_name": "石川剛", "department":"ITS＆E事業部", "year":6, "job":"エンジニア", "bookCount":3,
+  {"id":4, "user_name": "石川剛", "department":"ITS＆E事業本部", "year":6, "job":"エンジニア", "bookCount":3,
     "goalList":[{ "id":1, "goal":"アプリエンジニアとしてのキャリアアップ",
     "booksList": [
-      { "id": 1, "title": "HTML＆CSSとWebデザインが 1冊できちんと身につく本", "status":"完了","year": "2年目","job":"エンジニア","star":3,"review":"アプリ開発について学ぶことができた。","color":"#ffc0cb" },
-      { "id": 2, "title": "やってはいけないデザイン", "status":"完了","year": "3年目","job":"エンジニア","star":5,"review":"NGを学ぶことで正解に近づける。","color":"#ffc0cb"}
+      { "id": 5, "title": "HTML＆CSSとWebデザインが 1冊できちんと身につく本", "status":"完了","year": "2年目","job":"エンジニア","star":3,"review":"アプリ開発について学ぶことができた。","color":"#ffc0cb" },
+      { "id": 6, "title": "やってはいけないデザイン", "status":"完了","year": "3年目","job":"エンジニア","star":5,"review":"NGを学ぶことで正解に近づける。","color":"#ffc0cb"}
       ]},
     { "id":2, "goal":"営業担当者の理解",
     "booksList": [
       { "id": 4, "title": "営業の鬼100則", "status":"完了","year": "5年目","job":"エンジニア","star":4,"review":"負の要素がないので、読んでいて気持ちがいい" ,"color":"#ffc0cb"}
   ]}]},
 
-  {"id":5, "user_name": "有田由紀", "department":"流通", "year":8, "job":"営業", "bookCount":4,
+  {"id":5, "user_name": "有田由紀", "department":"流通・サービスソリューション事業本部", "year":8, "job":"営業", "bookCount":4,
     "goalList":[{ "id":1, "goal":"アプリエンジニアとしてのキャリアアップ",
     "booksList": [
-      { "id": 1, "title": "HTML＆CSSとWebデザインが 1冊できちんと身につく本", "status":"完了","year": "2年目","job":"エンジニア","star":3,"review":"アプリ開発について学ぶことができた。","color":"#ffc0cb" },
-      { "id": 2, "title": "やってはいけないデザイン", "status":"完了","year": "3年目","job":"エンジニア","star":5,"review":"NGを学ぶことで正解に近づける。","color":"#ffc0cb"}
+      { "id": 5, "title": "HTML＆CSSとWebデザインが 1冊できちんと身につく本", "status":"完了","year": "2年目","job":"エンジニア","star":3,"review":"アプリ開発について学ぶことができた。","color":"#ffc0cb" },
+      { "id": 6, "title": "やってはいけないデザイン", "status":"完了","year": "3年目","job":"エンジニア","star":5,"review":"NGを学ぶことで正解に近づける。","color":"#ffc0cb"}
       ]},
     { "id":2, "goal":"営業へのキャリアチェンジ",
     "booksList": [
-      { "id": 3, "title": "最強の営業術～AI時代に営業マンが生き残る方法", "status":"完了","year": "5年目","job":"","star":null,"review":"" ,"color":"#ffc0cb"},
-      { "id": 4, "title": "営業の鬼100則", "status":"完了","year": "5年目","job":"","star":null,"review":"" ,"color":"#ffc0cb"}
+      { "id": 8, "title": "最強の営業術～AI時代に営業マンが生き残る方法", "status":"完了","year": "5年目","job":"","star":null,"review":"" ,"color":"#ffc0cb"},
+      { "id": 9, "title": "営業の鬼100則", "status":"完了","year": "5年目","job":"","star":null,"review":"" ,"color":"#ffc0cb"}
   ]}]},
 
-  {"id":6, "user_name": "花田京子", "department":"流通", "year":5, "job":"デザイナー", "bookCount":4,
+  {"id":6, "user_name": "花田京子", "department":"流通・サービスソリューション事業本部", "year":5, "job":"デザイナー", "bookCount":4,
   "goalList":[{ "id":1, "goal":"デザイナーとしてのキャリアアップ",
   "booksList": [
-    { "id": 1, "title": "HTML＆CSSとWebデザインが 1冊できちんと身につく本", "status":"完了","year": "2年目","job":"エンジニア","star":3,"review":"アプリ開発について学ぶことができた。","color":"#ffc0cb" },
-    { "id": 2, "title": "やってはいけないデザイン", "status":"完了","year": "3年目","job":"エンジニア","star":5,"review":"NGを学ぶことで正解に近づける。","color":"#ffc0cb"}
+    { "id": 6, "title": "HTML＆CSSとWebデザインが 1冊できちんと身につく本", "status":"完了","year": "2年目","job":"エンジニア","star":3,"review":"アプリ開発について学ぶことができた。","color":"#ffc0cb" },
+    { "id": 7, "title": "やってはいけないデザイン", "status":"完了","year": "3年目","job":"エンジニア","star":5,"review":"NGを学ぶことで正解に近づける。","color":"#ffc0cb"}
     ]},
   { "id":2, "goal":"営業職の理解",
   "booksList": [
-    { "id": 3, "title": "最強の営業術～AI時代に営業マンが生き残る方法", "status":"完了","year": "4年目","job":"デザイナー","star":null,"review":"" ,"color":"#ffc0cb"},
-    { "id": 4, "title": "営業の鬼100則", "status":"完了","year": "5年目","job":"デザイナー","star":null,"review":"" ,"color":"#ffc0cb"}
-]}]}
-  
+    { "id": 8, "title": "最強の営業術～AI時代に営業マンが生き残る方法", "status":"完了","year": "4年目","job":"デザイナー","star":null,"review":"" ,"color":"#ffc0cb"},
+    { "id": 9, "title": "営業の鬼100則", "status":"完了","year": "5年目","job":"デザイナー","star":null,"review":"" ,"color":"#ffc0cb"}
+]}]},
 
-  ],
+  {"id":7, "user_name": "高橋大樹", "department":"デジタル製造業センター", "year":9, "job":"エンジニア", "bookCount":2,
+  "goalList":[{ "id":1, "goal":"エンジニアとしてのスキルアップ",
+  "booksList": [
+    { "id": 4, "title": "人月の神話", "status":"完了","year": "7年目","job":"エンジニア","star":5,"review":"人月という単位について理解を深められた。","color":"#ffc0cb" },
+    { "id": 10, "title": "コンサルタントの秘密: 技術アドバイスの人間学", "status":"完了","year": "8年目","job":"エンジニア","star":5,"review":"コンサルタントという職業について学ぶことができた。","color":"#ffc0cb"}
+    ]}
+ ]},
+
+ {"id":8, "user_name": "西村竜馬", "department":"流通・サービスソリューション事業本部", "year":5, "job":"デザイナー", "bookCount":4,
+ "goalList":[{ "id":1, "goal":"エンジニアへのキャリアチェンジ",
+ "booksList": [
+   { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"営業","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
+   { "id": 2, "title": "サービスデザイン思考", "status":"完了","year": "4年目","job":"営業","star":5,"review":"デザインの基礎が学習できる。","color":"#ffc0cb"},
+   { "id": 3, "title": "インタフェースデザインの心理学", "status":"完了","year": "3年目","job":"営業","star":5,"review":"心理学的からデザインへのアプローチがわかる" ,"color":"#ffc0cb"},
+   { "id": 4, "title": "人月の神話", "status":"予定","year": "8年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
+]}]},
+
+{"id":9, "user_name": "井村花", "department":"金融ソリューション事業本部", "year":3, "job":"エンジニア", "bookCount":2,
+"goalList":[{ "id":1, "goal":"エンジニアとしてのスキルアップ",
+"booksList": [
+  { "id": 3, "title": "インタフェースデザインの心理学", "status":"完了","year": "3年目","job":"営業","star":5,"review":"心理学的からデザインへのアプローチがわかる" ,"color":"#ffc0cb"},
+  { "id": 4, "title": "人月の神話", "status":"予定","year": "8年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
+]}]},
+
+{"id":10, "user_name": "多田良助", "department":"産業ソリューション事業本部", "year":4, "job":"営業", "bookCount":4,
+"goalList":[{ "id":1, "goal":"エンジニアへのキャリアチェンジ",
+"booksList": [
+  { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"営業","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
+  { "id": 2, "title": "サービスデザイン思考", "status":"完了","year": "4年目","job":"営業","star":5,"review":"デザインの基礎が学習できる。","color":"#ffc0cb"},
+  { "id": 3, "title": "インタフェースデザインの心理学", "status":"完了","year": "3年目","job":"営業","star":5,"review":"心理学的からデザインへのアプローチがわかる" ,"color":"#ffc0cb"},
+  { "id": 4, "title": "人月の神話", "status":"予定","year": "8年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
+]}]},
+
+{"id":11, "user_name": "竹村豪", "department":"ITS＆E事業本部", "year":6, "job":"デザイナー", "bookCount":3,
+"goalList":[{ "id":1, "goal":"エンジニアへのキャリアチェンジ",
+"booksList": [
+  { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"営業","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
+  { "id": 3, "title": "インタフェースデザインの心理学", "status":"完了","year": "3年目","job":"営業","star":5,"review":"心理学的からデザインへのアプローチがわかる" ,"color":"#ffc0cb"},
+  { "id": 4, "title": "人月の神話", "status":"予定","year": "8年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
+]}]},
+
+{"id":12, "user_name": "津村友和", "department":"鉄鋼ソリューション事業本部", "year":5, "job":"営業", "bookCount":4,
+"goalList":[{ "id":1, "goal":"エンジニアへのキャリアチェンジ",
+"booksList": [
+  { "id": 1, "title": "リーダブルコード", "status":"完了","year": "1年目","job":"営業","star":3,"review":"早期リターンについて学習できた。","color":"#ffc0cb" },
+  { "id": 2, "title": "サービスデザイン思考", "status":"完了","year": "4年目","job":"営業","star":5,"review":"デザインの基礎が学習できる。","color":"#ffc0cb"},
+  { "id": 3, "title": "インタフェースデザインの心理学", "status":"完了","year": "3年目","job":"営業","star":5,"review":"心理学的からデザインへのアプローチがわかる" ,"color":"#ffc0cb"},
+  { "id": 4, "title": "人月の神話", "status":"予定","year": "8年目","job":"","star":null,"review":"" ,"color":"#d3d3d3"}
+]}]},
+
+{"id":13, "user_name": "宇畑健吾", "department":"テレコムソリューション事業部", "year":3, "job":"エンジニア", "bookCount":4,
+  "goalList":[{ "id":1, "goal":"アプリエンジニアとしてのキャリアアップ",
+  "booksList": [
+    { "id": 5, "title": "HTML＆CSSとWebデザインが 1冊できちんと身につく本", "status":"完了","year": "2年目","job":"エンジニア","star":3,"review":"アプリ開発について学ぶことができた。","color":"#ffc0cb" },
+    { "id": 6, "title": "やってはいけないデザイン", "status":"完了","year": "3年目","job":"エンジニア","star":5,"review":"NGを学ぶことで正解に近づける。","color":"#ffc0cb"}
+    ]},
+  { "id":2, "goal":"営業へのキャリアチェンジ",
+  "booksList": [
+    { "id": 8, "title": "最強の営業術～AI時代に営業マンが生き残る方法", "status":"完了","year": "5年目","job":"","star":null,"review":"" ,"color":"#ffc0cb"},
+    { "id": 9, "title": "営業の鬼100則", "status":"完了","year": "5年目","job":"","star":null,"review":"" ,"color":"#ffc0cb"}
+]}]},
+
+{"id":14, "user_name": "木村陸", "department":"流通・サービスソリューション事業本部", "year":4, "job":"デザイナー", "bookCount":4,
+"goalList":[{ "id":1, "goal":"デザイナーとしてのキャリアアップ",
+"booksList": [
+  { "id": 6, "title": "HTML＆CSSとWebデザインが 1冊できちんと身につく本", "status":"完了","year": "2年目","job":"エンジニア","star":3,"review":"アプリ開発について学ぶことができた。","color":"#ffc0cb" },
+  { "id": 7, "title": "やってはいけないデザイン", "status":"完了","year": "3年目","job":"エンジニア","star":5,"review":"NGを学ぶことで正解に近づける。","color":"#ffc0cb"}
+  ]},
+{ "id":2, "goal":"営業職の理解",
+"booksList": [
+  { "id": 8, "title": "最強の営業術～AI時代に営業マンが生き残る方法", "status":"完了","year": "4年目","job":"デザイナー","star":null,"review":"" ,"color":"#ffc0cb"},
+  { "id": 9, "title": "営業の鬼100則", "status":"完了","year": "5年目","job":"デザイナー","star":null,"review":"" ,"color":"#ffc0cb"}
+]}]},
+
+{"id":15, "user_name": "川田将雅", "department":"デジタルソリューション＆コンサルティング本部", "year":6, "job":"エンジニア", "bookCount":2,
+"goalList":[{ "id":1, "goal":"エンジニアとしてのスキルアップ",
+"booksList": [
+  { "id": 4, "title": "人月の神話", "status":"完了","year": "7年目","job":"エンジニア","star":5,"review":"人月という単位について理解を深められた。","color":"#ffc0cb" },
+  { "id": 10, "title": "コンサルタントの秘密: 技術アドバイスの人間学", "status":"完了","year": "8年目","job":"エンジニア","star":5,"review":"コンサルタントという職業について学ぶことができた。","color":"#ffc0cb"}
+  ]}
+]}
+],
       
       
   
@@ -133,7 +213,7 @@
       {"id":4, "title":"人月の神話", "author":" Dustin Boswell, Trevor Foucher", "genre":"技術書", "publisher":"オライリージャパン", "place":"みなとみらい","url":"https://example.com", "status":"貸出可能",  "image":"image4.jpg", "date":"2019/01/16",
         "comments":[
           {"id":1, "user_name": "田中太郎", "star":3,"review":"早期リターンについて学習できた。"},
-          {"id":2, "user_name": "山田花子", "star":4,"review":"どんなコードが読みやすいのか理解することができた。"},
+          {"id":7, "user_name": "高橋大樹", "star":5,"review":"人月という単位について理解を深められた。"},
           {"id":3, "user_name": "中西航太", "star":5,"review":"応用情報？アジャイル？いいから新人はこれ読んでこい！"}
     ],
     "explanations":[
@@ -211,7 +291,7 @@
       ]}
 ]},
 
-    {"id": 9, "title": "営業の鬼100則", "author": "早川勝  ", "genre": "営業", "publisher": "昭栄社", "place": "虎ノ門", "url": "https://example.com", "status": "貸出不可", "image": "image9.jpg", "date":"2012/05/01",
+    {"id": 9, "title": "営業の鬼100則", "author": "早川勝 ", "genre": "営業", "publisher": "昭栄社", "place": "虎ノ門", "url": "https://example.com", "status": "貸出不可", "image": "image9.jpg", "date":"2012/05/01",
     "comments":[
       {"id":4, "user_name": "石川剛", "star":4,"review":"負の要素がないので、読んでいて気持ちがいい"},
       {"id":5, "user_name": "有田由紀", "star":4,"review":"ポジティブシンキングが実践できる"},
@@ -226,6 +306,31 @@
       {"id":4, "user_name":"石川剛", "explanation":"市場価値としての売り方を確立する" },
       {"id":5, "user_name":"有田由紀", "explanation":"売るものは違くても売り方のフォーマットが自分の中でできれば売れる"  }
     ]}
+    ] },
+    
+    {"id":10, "title":"コンサルタントの秘密: 技術アドバイスの人間学", "author":"G.M.ワインバーグ", "genre":"技術書", "publisher":"共立出版", "place":"虎ノ門", "url": "https://example.com", "status":"貸出不可", "image": "image10.jpg", "data":"1991/1/1",
+    "comments":[
+      {"id":7, "user_name": "高橋大樹", "star":5,"review":"コンサルタントという職業について学ぶことができた。"},
+      {"id":1, "user_name": "田中太郎", "star":3,"review":"問題解決の極意を学べた。"}
+    ],
+    "explanations":[
+      {
+        "chap_id": 2,
+        "chap_name": "成功するプロジェクトの立ち上げ",
+        "chap_explanations": [
+          {"id": 7, "user_name": "佐藤健太", "explanation": "プロジェクトの初期段階での戦略的なアプローチが重要。"},
+          {"id": 8, "user_name": "田村麻美", "explanation": "クライアントとの期待値を整理し、共有するプロセスが大切。"}
+        ]
+      },
+      {
+        "chap_id": 3,
+        "chap_name": "リーダーシップとチームビルディング",
+        "chap_explanations": [
+          {"id": 9, "user_name": "伊藤健太", "explanation": "チームメンバーとの信頼関係の構築が成功の鍵。"},
+          {"id": 10, "user_name": "小林太郎", "explanation": "リーダーシップの発揮がプロジェクトを成功に導く。"}
+        ]
+      }
     ] }
+
     ]
 }
