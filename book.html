@@ -9,12 +9,8 @@
 <body>
   <div id="book" class="app">
     <button @click="goBack()" class="return">戻る</button>
-    <div v-on:click="handleRowClickEmp(0)" class="menuTab">
-      <button>マイページ</button>
-    </div>
-    <div class="menuTab" v-on:click="handleRowClickAllEmp()">
-      <button>従業員検索ページ</button>
-    </div>
+      <button v-on:click="handleRowClickEmp(0)" class="menuTab">マイページ</button>
+      <button v-on:click="handleRowClickAllEmp(0)" class="menuTab">従業員検索ページ</button>
     <h2> {{ book.title }}</h2>
     <div class="bookData">
       <div>
@@ -45,8 +41,8 @@
         <p>{{ book.status }}</p>
       </div>
     </div>
-    <div>■レビュー</div>
-    <div  v-for="(comment, index) in comments" :key="index" v-on:click="handleRowClickEmp(comment.id)" class="comments">
+    <div class="review">■レビュー</div>
+    <div  v-for="(comment, index) in comments" :key="index"  class="comments">
       <table>
         <thead>
           <tr>
@@ -54,16 +50,16 @@
         </thead>
         <tbody class="tbody">
           <tr>
-            <td class="user_name"> 名前: {{ comment.user_name }}</td>
+            <td v-on:click="handleRowClickEmp(comment.id)" class="user_name"> 名前: {{ comment.user_name }}</td>
             <td class="star"> 評価：☆{{ comment.star }}</td>
           </tr>
         </tbody>
       </table>
       <p class="comment">{{ comment.review }}</p>
     </div>
-    <div>■解説</div>
-    <div  v-for="(chapter, index) in explanations" :key="index" >
-      <p>・{{ chapter.chap_id }}章</p>
+    <div class="explanation">■解説</div>
+    <div  v-for="(chapter, index) in explanations" :key="index" class="chapter">
+      <p class="chapter_name">{{ chapter.chap_id }}章：{{chapter.chap_name}}</p>
       <div v-for="(explanation, index1) in explanations[index].chap_explanations" :key="index1" 
          class="comments">
       <table>

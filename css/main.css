@@ -9,7 +9,33 @@
     padding: 4px;
     padding-left: 16px;
     padding-right: 16px;
+}
+.return:hover{
+    background-color: #eeeeee;
     cursor: pointer;
+}
+.return:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+}
+
+.menuTab{
+    width:130px;
+    float: right;
+    border-radius: 8px;
+    font-size: 12px;
+    border: solid 2px #aaaaaa;
+    background-color: white;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 2px;
+}
+.menuTab:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+.menuTab:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
 }
 
 .header{
@@ -19,21 +45,20 @@
     width: 1272px;
 }
 
-.menuTab button{
-    float: right;
-    background: #ffffff;
-    border: none;
-    border-bottom: solid 2px #aaaaaa;
-    margin-right: 8px;
-    cursor: pointer;
-}
-
 .empName{
     font-size: 40px;
 }
 
 .empDetail{
     font-size: 20px;
+}
+
+.goal{
+    margin-bottom: 40px;
+}
+
+.goalName{
+    margin-bottom: 0;
 }
 
 .booksTable{

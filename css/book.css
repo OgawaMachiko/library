@@ -10,16 +10,33 @@
     padding: 4px;
     padding-left: 16px;
     padding-right: 16px;
+}
+.return:hover{
+    background-color: #eeeeee;
     cursor: pointer;
 }
+.return:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+}
 
-.menuTab button{
+.menuTab{
+    width:130px;
     float: right;
-    background: #ffffff;
-    border: none;
-    border-bottom: solid 2px #aaaaaa;
-    margin-right: 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    border: solid 2px #aaaaaa;
+    background-color: white;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 2px;
+}
+.menuTab:hover{
+    background-color: #eeeeee;
     cursor: pointer;
+}
+.menuTab:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
 }
 
 .bookData{
@@ -49,8 +66,14 @@
     font-size: 13px;
     color: dimgray;
 }
-.user_name{
+
+.user_name:hover{
+    color: black;
     cursor: pointer;
+}
+
+.review{
+    font-size: 18px;
 }
 
 .comment{
@@ -63,6 +86,21 @@
     background-color: whitesmoke;
     padding: 4px;
     margin-bottom: 8px;
+}
+
+.explanation{
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.chapter{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.chapter_name{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .img{
