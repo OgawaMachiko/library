@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Display Book Data Details in Table Using Vue.js CDN</title>
+  <title>Display Employees Data in Table Using Vue.js CDN</title>
   <script src="https://cdn.jsdelivr.net/npm/vue@3.2.20/dist/vue.global.prod.js"></script>
   <link rel="stylesheet" href="css/employee.css">
   </link>
@@ -13,54 +13,52 @@
   <div id="employee" class="app">
     <!-- <button @click="goBack()" class="return">戻る</button> -->
     <button v-on:click="handleRowClickEmp(0)" class="menuTab">マイページ</button>
-
-    <div>
-      <p class="jobType">職種</p>
-      <input type="checkbox" id="job1" v-model="selectedJobs" value="エンジニア">
-      <label for="job1">エンジニア</label>
-      <input type="checkbox" id="job2" v-model="selectedJobs" value="デザイナー">
-      <label for="job2">デザイナー</label>
-      <input type="checkbox" id="job3" v-model="selectedJobs" value="営業">
-      <label for="job3">営業</label>
-    </div>
-
-    <div>
-      <label for="sortYear">From</label>
-      <select id="sortYearFrom" v-model="fromYear">
-        <option value="">--</option>
-        <option v-for="year in availableYears" :value="year">{{ year }}</option>
-      </select>
-
-      <label for="sortYear">To</label>
-      <select id="sortYearTo" v-model="toYear">
-        <option value="">--</option>
-        <option v-for="year in availableYears" :value="year">{{ year }}</option>
-      </select>
-    </div>
-    <div>
-      <button @click="searchEmployees" class="return">検索</button>
+    <div class="filter">
+      <div class="jobs">  
+        <p class="jobType">職種</p>
+        <input type="checkbox" id="job1" v-model="selectedJobs" value="エンジニア">
+        <label for="job1">エンジニア</label><br>
+        <input type="checkbox" id="job2" v-model="selectedJobs" value="デザイナー">
+        <label for="job2">デザイナー</label><br>
+        <input type="checkbox" id="job3" v-model="selectedJobs" value="営業">
+        <label for="job3">営業</label>
+      </div>
+      <div class="year">
+        <p class="jobType">年次</p>
+        <label for="sortYear">From</label>
+        <select id="sortYearFrom" v-model="fromYear">
+          <option value="">--</option>
+          <option v-for="year in availableYears" :value="year">{{ year }}</option>
+        </select>
+        <label for="sortYear"> ～ To</label>
+        <select id="sortYearTo" v-model="toYear">
+          <option value="">--</option>
+          <option v-for="year in availableYears" :value="year">{{ year }}</option>
+        </select>
+      </div>
+      <div class="filterButton">
+        <button @click="searchEmployees" class="return">検索</button>
       <button @click="clearFilters" class="return">クリア</button>
+        </div>
     </div>
     <div>
-      <table class="booksTable">
-        <tr class="tableHeader">
-          <th>氏名</th>
-          <th>職種</th>
-          <th>年次</th>
-          <th>読んだ本数</th>
-        </tr>
-        <tr v-for="(employee,index) in employees" :key="index" v-on:click="handleRowClickEmp(employee.id)"
-          class="tableMain">
-          <td class="user_name">{{ employee.user_name }}</td>
-          <td>{{ employee.job }}
-    </div>
-    </td>
-    <td>{{ employee.year }}</td>
-    <td>{{ employee.bookCount }}</td>
-    </tr>
-    </table>
-  </div>
-
+        <p class="employees">従業員一覧</p>
+        <table class="employeesTable">
+            <tr class="tableHeader">
+              <th>氏名</th>
+              <th>職種</th>
+              <th>年次</th>
+              <th>読んだ本数</th>
+            </tr>
+            <tr v-for="(employee,index) in employees" :key="index" 
+            v-on:click="handleRowClickEmp(employee.id)" class="tableMain">
+                <td class="user_name">{{ employee.user_name }}</td>
+                <td>{{ employee.job }}</td>
+                <td>{{ employee.year }} 年目 </td>
+                <td>{{ employee.bookCount }} 冊 </td>
+            </tr>    
+        </table>
+      </div>
   </div>
   <script src="js/employee.js"></script>
 </body>
