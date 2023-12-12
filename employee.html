@@ -10,11 +10,10 @@
 
 <body>
   <div id="employee" class="app">
-    <div class="title">
-      社員検索
-    </div>
+    <div class="title">社員検索
     <button v-on:click="handleRowClickEmp(0)" class="menuTab">マイページ</button>
-    <div class="filter">
+  </div>
+  <div class="filter">
       <div class="jobs">
         <p class="jobType">職種</p>
         <div>
@@ -53,7 +52,8 @@
           <th class="nameth">氏名</th>
           <th class="jobth">職種</th>
           <th class="yearth">年次</th>
-          <th class="bookth">読んだ本数</th>
+          <th class="bookth">読了冊数</th>
+          <th>最新の目的</th>
         </tr>
         <tr v-for="(employee,index) in employees" :key="index" v-on:click="handleRowClickEmp(employee.id)"
           class="tableMain">
@@ -61,6 +61,7 @@
           <td>{{ employee.job }}</td>
           <td>{{ employee.year }} 年目</td>
           <td>{{ employee.bookCount }} 冊</td>
+          <td class="goalth">{{employee.goalList[employee.goalList.length-1].goal}}</td>
         </tr>
       </table>
     </div>
