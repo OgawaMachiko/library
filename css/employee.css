@@ -38,8 +38,9 @@
     border: solid 2px #aaaaaa;
     background-color: white;
     padding: 4px 10px;
-    margin-left: auto;
+    margin-left: 550px;
     margin-bottom: 20px;
+  
   }
   
   .menuTab:hover {
@@ -108,11 +109,11 @@
   }
   
   .nameth {
-    width: 300px;
+    width: 250px;
   }
   
   .jobth {
-    width: 200px;
+    width: 150px;
   }
   
   .yearth {
@@ -120,7 +121,12 @@
   }
   
   .bookth {
-    width: 100px;
+    width: 150px;
+  }
+
+  .goalth {
+    width: 700px;
+    text-align: left;
   }
   
   .tableMain:hover {

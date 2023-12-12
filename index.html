@@ -27,18 +27,18 @@
           <tr class="tableHeader">
             <th>タイトル</th>
             <th>進捗状況</th>
-            <th>年次</th>
+            <th>読了年次</th>
             <th>職種</th>
             <th>評価☆</th>
             <th>コメント</th>
           </tr>
           <tr v-for="(book,index) in employee.goalList[index1].booksList"  :key="index" v-on:click="handleRowClick(book.id)" class="tableMain">
-              <td>{{ book.title }}</td>
+              <td class="booktd">{{ book.title }}</td>
               <td><div class="bookStatus" :style="{backgroundColor: book.color}">{{ book.status }}</div></td>
               <td>{{ book.year }}</td>
               <td>{{ book.job }}</td>
               <td>{{ book.star }}</td>
-              <td>{{ book.review }}</td>
+              <td class="booktd">{{ book.review }}</td>
           </tr>    
       </table>
       </div>

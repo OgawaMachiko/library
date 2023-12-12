@@ -72,6 +72,7 @@
     border-radius: 4px;
     width: 64px;
     text-align: center;
+    align-items: center;
 }
 
 th{
@@ -88,4 +89,13 @@ td{
 .tableMain:hover{
     background-color: #eeeeee;
     cursor: pointer;
+}
+
+.tableMain{
+    text-align: center;
+    align-items: center;
+}
+
+.booktd{
+    text-align: left;
 }
