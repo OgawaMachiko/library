@@ -24,18 +24,21 @@
     </div>
 
     <div>
-        <label for="sortYear">From</label>
-        <select id="sortYearFrom" v-model="fromYear" @change="sortEmployees">
-            <option value="">--</option>
-            <option v-for="year in availableYears" :value="year">{{ year }}</option>
-        </select>
-    
-        <label for="sortYear">To</label>
-        <select id="sortYearTo" v-model="toYear" @change="sortEmployees">
-            <option value="">--</option>
-            <option v-for="year in availableYears" :value="year">{{ year }}</option>
-        </select>
+      <label for="sortYear">From</label>
+      <select id="sortYearFrom" v-model="fromYear" @change="sortEmployees">
+          <option value="">--</option>
+          <option v-for="year in availableYears" :value="year">{{ year }}</option>
+      </select>
+
+      <label for="sortYear">To</label>
+      <select id="sortYearTo" v-model="toYear" @change="sortEmployees">
+          <option value="">--</option>
+          <option v-for="year in availableYears" :value="year">{{ year }}</option>
+      </select>
     </div>
+    <div>
+      <button @click="searchEmployees">検索</button>
+  </div>
     <div>
         <table class="booksTable">
             <tr class="tableHeader">
