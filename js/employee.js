@@ -4,15 +4,15 @@ const app = Vue.createApp({
       employees: [],
       employeeId: 0,
       selectedJobs: [],
-      fromYear: null,
-      toYear: null,
+      fromYear: 0,
+      toYear: 0,
       availableYears: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       isFilterCleared: true,
     };
   },
 
   mounted() {
-    this.getEmployees();
+    this.searchEmployees()
   },
 
   methods: {
@@ -25,32 +25,14 @@ const app = Vue.createApp({
     goBack() {
       window.history.back();
     },
-    getEmployees() {
-      fetch('http://localhost:3000/employees')
-        .then(response => response.json())
-        .then(data => {
-          this.employees = data;
-        })
-        .catch(error => {
-          console.error('Error fetching data:', error);
-        });
-    },
-    sortEmployees() {
-      let filteredEmployees = this.sortedEmployees;
-
-      if (this.fromYear) {
-        filteredEmployees = filteredEmployees.filter(employee => employee.year >= this.fromYear);
-      }
-      if (this.toYear) {
-        filteredEmployees = filteredEmployees.filter(employee => employee.year <= this.toYear);
-      }
-
-      filteredEmployees.sort((a, b) => b.year - a.year);
-
-      this.employees = filteredEmployees;
-    },
     async searchEmployees() {
       try {
+        // バリデーション: fromYear が toYear よりも小さい場合に警告を表示
+        if (this.fromYear && this.toYear && this.fromYear > this.toYear) {
+          alert('From年次はTo年次よりも小さくすることはできません。');
+          return; // バリデーションエラーの場合、以降の処理を実行せずに終了
+        }
+
         // データを取得
         const response = await fetch('http://localhost:3000/employees');
         const data = await response.json();
@@ -68,6 +50,16 @@ const app = Vue.createApp({
           filteredEmployees = filteredEmployees.filter(employee => this.selectedJobs.includes(employee.job));
         }
 
+        // 年次で昇順、同じ年次の場合は職種で昇順にソート
+        filteredEmployees.sort((a, b) => {
+          if (a.year !== b.year) {
+            return a.year - b.year;
+          } else {
+            // 年次が同じ場合、職種で昇順にソート
+            return a.job.localeCompare(b.job);
+          }
+        });
+
         // フィルタリングされた結果を設定
         this.employees = filteredEmployees;
       } catch (error) {
@@ -79,19 +71,7 @@ const app = Vue.createApp({
       this.toYear = null;
       this.selectedJobs = [];
       this.isFilterCleared = true;
-      this.getEmployees();
-    },
-
-  },
-
-  computed: {
-    sortedEmployees() {
-      this.isFilterCleared = false;
-      if (this.selectedJobs.length === 0) {
-        return this.employees;
-      } else {
-        return this.employees.filter(employee => this.selectedJobs.includes(employee.job));
-      }
+      this.searchEmployees();
     }
   }
 });
