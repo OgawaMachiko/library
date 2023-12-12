@@ -48,23 +48,53 @@ const app = Vue.createApp({
 
       this.employees = filteredEmployees;
     },
-    searchEmployees() {
-      let filteredEmployees = [...this.employees];
-      if (this.fromYear) {
-        filteredEmployees = filteredEmployees.filter(employee => employee.year >= this.fromYear);
-      }
-      if (this.toYear) {
-        filteredEmployees = filteredEmployees.filter(employee => employee.year <= this.toYear);
-      }
+    // searchEmployees() {
+    //   this.getEmployees()
 
-      if (this.selectedJobs.length > 0) {
-        filteredEmployees = filteredEmployees.filter(employee => this.selectedJobs.includes(employee.job));
+    //   let filteredEmployees = [...this.employees];
+    //   if (this.fromYear) {
+    //     filteredEmployees = filteredEmployees.filter(employee => employee.year >= this.fromYear);
+    //   }
+    //   if (this.toYear) {
+    //     filteredEmployees = filteredEmployees.filter(employee => employee.year <= this.toYear);
+    //   }
+
+    //   if (this.selectedJobs.length > 0) {
+    //     filteredEmployees = filteredEmployees.filter(employee => this.selectedJobs.includes(employee.job));
+    //   }
+
+    //   // filteredEmployees.sort((a, b) => a.year - b.year);
+    //   this.employees = filteredEmployees;
+
+
+
+    // }
+    async searchEmployees() {
+      try {
+        // データを取得
+        const response = await fetch('http://localhost:3000/employees');
+        const data = await response.json();
+        this.employees = data;
+
+        // 他の処理を実行
+        let filteredEmployees = [...this.employees];
+        if (this.fromYear) {
+          filteredEmployees = filteredEmployees.filter(employee => employee.year >= this.fromYear);
+        }
+        if (this.toYear) {
+          filteredEmployees = filteredEmployees.filter(employee => employee.year <= this.toYear);
+        }
+        if (this.selectedJobs.length > 0) {
+          filteredEmployees = filteredEmployees.filter(employee => this.selectedJobs.includes(employee.job));
+        }
+
+        // フィルタリングされた結果を設定
+        this.employees = filteredEmployees;
+      } catch (error) {
+        console.error('Error fetching or filtering data:', error);
       }
+    },
 
-      filteredEmployees.sort((a, b) => a.year - b.year);
-
-      this.employees = filteredEmployees;
-    }
   },
 
   computed: {

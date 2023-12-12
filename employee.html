@@ -25,13 +25,13 @@
 
     <div>
       <label for="sortYear">From</label>
-      <select id="sortYearFrom" v-model="fromYear" @change="sortEmployees">
+      <select id="sortYearFrom" v-model="fromYear">
           <option value="">--</option>
           <option v-for="year in availableYears" :value="year">{{ year }}</option>
       </select>
 
       <label for="sortYear">To</label>
-      <select id="sortYearTo" v-model="toYear" @change="sortEmployees">
+      <select id="sortYearTo" v-model="toYear">
           <option value="">--</option>
           <option v-for="year in availableYears" :value="year">{{ year }}</option>
       </select>
@@ -47,7 +47,7 @@
               <th>年次</th>
               <th>読んだ本数</th>
             </tr>
-            <tr v-for="(employee,index) in sortedEmployees" :key="index" 
+            <tr v-for="(employee,index) in employees" :key="index" 
             v-on:click="handleRowClickEmp(employee.id)" class="tableMain">
                 <td class="user_name">{{ employee.user_name }}</td>
                 <td>{{ employee.job }}</div></td>
