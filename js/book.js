@@ -22,7 +22,11 @@ const book = Vue.createApp({
         .catch(error => {
           console.error('Error fetching data:', error);
         });
-    },
+
+        
+      },
+      
+
     methods: {
         returnTop(id){
             window.location.href="http://127.0.0.1:3000/index.html"

@@ -9,13 +9,9 @@
 <body>
   <div id="app" class="app">
     <button @click="goBack()" class="return">戻る</button>
-    <div v-on:click="handleRowClickEmp(0)" class="menuTab">
-      <button>マイページ</button>
-    </div>
-    <div class="menuTab" v-on:click="handleRowClickAllEmp()">
-      <button>従業員検索ページ</button>
-    </div>
-    <div class="header">
+    <button v-on:click="handleRowClickEmp(0)" class="menuTab">マイページ</button>
+    <button v-on:click="handleRowClickAllEmp(0)" class="menuTab">従業員検索ページ</button>
+  <div class="header">
       <div>
         <div class="empName">{{employee.user_name}}</div>
         <div class="empDetail">
@@ -25,8 +21,8 @@
       </div>
     </div>
     <div class="main">
-      <div v-for="(goal,index1) in employee.goalList" :key="index1">
-      <p>■目的： {{ employee.goalList[index1].goal}}</p>    
+      <div v-for="(goal,index1) in employee.goalList" :key="index1" class="goal">
+      <p class="goalName">■目的： {{ employee.goalList[index1].goal}}</p>    
       <table class="booksTable">
           <tr class="tableHeader">
             <th>タイトル</th>
