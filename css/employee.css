@@ -39,6 +39,10 @@
 .menuTab:active {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
 }
+.jobType{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
 
 .bookData{
     display: flex;
