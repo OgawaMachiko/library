@@ -6,59 +6,64 @@
   <title>Display Employees Data in Table Using Vue.js CDN</title>
   <script src="https://cdn.jsdelivr.net/npm/vue@3.2.20/dist/vue.global.prod.js"></script>
   <link rel="stylesheet" href="css/employee.css">
-  </link>
 </head>
 
 <body>
   <div id="employee" class="app">
-    <!-- <button @click="goBack()" class="return">戻る</button> -->
+    <div class="title">
+      社員検索
+    </div>
     <button v-on:click="handleRowClickEmp(0)" class="menuTab">マイページ</button>
     <div class="filter">
-      <div class="jobs">  
+      <div class="jobs">
         <p class="jobType">職種</p>
-        <input type="checkbox" id="job1" v-model="selectedJobs" value="エンジニア">
-        <label for="job1">エンジニア</label><br>
-        <input type="checkbox" id="job2" v-model="selectedJobs" value="デザイナー">
-        <label for="job2">デザイナー</label><br>
-        <input type="checkbox" id="job3" v-model="selectedJobs" value="営業">
-        <label for="job3">営業</label>
+        <div>
+          <input type="checkbox" id="job1" v-model="selectedJobs" value="エンジニア">
+          <label for="job1">エンジニア</label><br>
+          <input type="checkbox" id="job2" v-model="selectedJobs" value="デザイナー">
+          <label for="job2">デザイナー</label><br>
+          <input type="checkbox" id="job3" v-model="selectedJobs" value="営業">
+          <label for="job3">営業</label>
+        </div>
       </div>
-      <div class="year">
+      <div class="jobs">
         <p class="jobType">年次</p>
-        <label for="sortYear">From</label>
-        <select id="sortYearFrom" v-model="fromYear">
-          <option value="">--</option>
-          <option v-for="year in availableYears" :value="year">{{ year }}</option>
-        </select>
-        <label for="sortYear"> ～ To</label>
-        <select id="sortYearTo" v-model="toYear">
-          <option value="">--</option>
-          <option v-for="year in availableYears" :value="year">{{ year }}</option>
-        </select>
+        <div class="selectbox">
+          <label for="sortYear">From</label>
+          <select id="sortYearFrom" v-model="fromYear">
+            <option value="">--</option>
+            <option v-for="year in availableYears" :value="year">{{ year }}</option>
+          </select>
+          <label for="sortYear"> ～ To</label>
+          <select id="sortYearTo" v-model="toYear">
+            <option value="">--</option>
+            <option v-for="year in availableYears" :value="year">{{ year }}</option>
+          </select>
+        </div>
       </div>
       <div class="filterButton">
         <button @click="searchEmployees" class="return">検索</button>
-      <button @click="clearFilters" class="return">クリア</button>
-        </div>
+        <button @click="clearFilters" class="return">クリア</button>
+      </div>
     </div>
     <div>
-        <p class="employees">従業員一覧</p>
-        <table class="employeesTable">
-            <tr class="tableHeader">
-              <th>氏名</th>
-              <th>職種</th>
-              <th>年次</th>
-              <th>読んだ本数</th>
-            </tr>
-            <tr v-for="(employee,index) in employees" :key="index" 
-            v-on:click="handleRowClickEmp(employee.id)" class="tableMain">
-                <td class="user_name">{{ employee.user_name }}</td>
-                <td>{{ employee.job }}</td>
-                <td>{{ employee.year }} 年目 </td>
-                <td>{{ employee.bookCount }} 冊 </td>
-            </tr>    
-        </table>
-      </div>
+      <p class="employees">■社員一覧</p>
+      <table class="employeesTable">
+        <tr class="tableHeader">
+          <th class="nameth">氏名</th>
+          <th class="jobth">職種</th>
+          <th class="yearth">年次</th>
+          <th class="bookth">読んだ本数</th>
+        </tr>
+        <tr v-for="(employee,index) in employees" :key="index" v-on:click="handleRowClickEmp(employee.id)"
+          class="tableMain">
+          <td class="user_name">{{ employee.user_name }}</td>
+          <td>{{ employee.job }}</td>
+          <td>{{ employee.year }} 年目</td>
+          <td>{{ employee.bookCount }} 冊</td>
+        </tr>
+      </table>
+    </div>
   </div>
   <script src="js/employee.js"></script>
 </body>
