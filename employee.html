@@ -8,11 +8,11 @@
 </head>
 <body>
   <div id="employee" class="app">
-    <button @click="goBack()" class="return">戻る</button>
+    <!-- <button @click="goBack()" class="return">戻る</button> -->
     <button v-on:click="handleRowClickEmp(0)" class="menuTab">マイページ</button>
 
     <div>
-        <p>職種</p>
+        <p class="jobType">職種</p>
         <input type="checkbox" id="job1" v-model="selectedJobs" value="エンジニア">
         <label for="job1">エンジニア</label>
         <input type="checkbox" id="job2" v-model="selectedJobs" value="デザイナー">
@@ -35,7 +35,7 @@
       </select>
     </div>
     <div>
-      <button @click="searchEmployees">検索</button>
+      <button @click="searchEmployees" class="return">検索</button>
   </div>
     <div>
         <table class="booksTable">
