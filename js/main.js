@@ -61,7 +61,7 @@ const app = Vue.createApp({
     handleDeleteClick(id, event){
       event.stopPropagation();
       
-      var result = window.confirm('読書予定を削除しますか？')
+      var result = window.confirm('読書予定を削除します。\r\n借りている本ではありませんか？')
       if(!result){
         return
       }
