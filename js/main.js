@@ -18,6 +18,7 @@ const app = Vue.createApp({
       .then(response => response.json())
       .then(data => {
         const targetEmp = data.find(emp => emp.id === this.employeeId)
+        // const targetEmp = data;
         if (targetEmp) {
           this.employee = targetEmp;
           this.goals = targetEmp.goals
