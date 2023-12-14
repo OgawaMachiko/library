@@ -78,6 +78,12 @@ const book = Vue.createApp({
         goBack() {
           window.history.back();
         },  
+
+        getUserName(empId) {
+          const employee = this.employees.find(emp => emp.id === empId);
+          return employee ? employee.user_name : 'Unknown';
+        },
+
         toggleRegistration() {
           if (this.canRegister) {
             this.registerList();
