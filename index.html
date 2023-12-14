@@ -21,8 +21,8 @@
       </div>
     </div>
     <div class="main">
-      <div v-for="(goal,index1) in employee.goalList" :key="index1" class="goal">
-      <p class="goalName">■目的： {{ employee.goalList[index1].goal}}</p>    
+      <div v-for="(goal) in goals" class="goal">
+      <div class="goalName">目的：{{goal.goalName}}</div>    
       <table class="booksTable">
           <tr class="tableHeader">
             <th>タイトル</th>
@@ -32,13 +32,13 @@
             <th>評価☆</th>
             <th>コメント</th>
           </tr>
-          <tr v-for="(book,index) in employee.goalList[index1].booksList"  :key="index" v-on:click="handleRowClick(book.id)" class="tableMain">
-              <td class="booktd">{{ book.title }}</td>
-              <td><div class="bookStatus" :style="{backgroundColor: book.color}">{{ book.status }}</div></td>
-              <td>{{ book.year }}</td>
-              <td>{{ book.job }}</td>
-              <td>{{ book.star }}</td>
-              <td class="booktd">{{ book.review }}</td>
+          <tr v-for="(record) in goal.recordList" class="tableMain" v-on:click="handleRowClick(record.id)">
+              <td class="booktd">{{ getBook(record.record_id) }}</td>
+              <td><div class="bookStatus" :style="{backgroundColor:getColor(record.record_id)}">{{ getStatus(record.record_id) }}</div></td>
+              <td>{{ getYear(record.record_id) }} 年目</td>
+              <td>{{ getJob(record.record_id) }}</td>
+              <td>☆ {{ getStar(record.record_id) }}</td>
+              <td class="booktd">{{ getComment(record.record_id) }}</td>
           </tr>    
       </table>
       </div>

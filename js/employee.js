@@ -4,29 +4,35 @@ const app = Vue.createApp({
       employees: [],
       employeeId: 0,
       selectedJobs: [],
-      fromYear: 0,
+      fromYear:  0,
       toYear: 0,
       availableYears: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-      isFilterCleared: true,
+      isFilterCleared: true
     };
   },
 
   mounted() {
+    // ページ読み込み時にURLからパラメータを取得して初期値として設定
+    this.fromYear = parseInt(new URLSearchParams(window.location.search).get('fromYear')) || 0;
+    this.toYear = parseInt(new URLSearchParams(window.location.search).get('toYear')) || 0;
+    const selectedJobsParam = new URLSearchParams(window.location.search).get('selectedJobs');
+    this.selectedJobs = selectedJobsParam ? selectedJobsParam.split(',') : [];
+
     this.searchEmployees()
   },
 
   methods: {
-    home() {
-      this.$router.push('./index.html');
-    },
     handleRowClickEmp(employeeId) {
       window.location.href = 'http://127.0.0.1:3000/index.html?id=' + employeeId;
     },
-    goBack() {
-      window.history.back();
-    },
     async searchEmployees() {
-      try {
+      try {      
+        // URL パラメータを更新
+        const queryParams = `?fromYear=${this.fromYear}&toYear=${this.toYear}&selectedJobs=${this.selectedJobs.join(',')}`;
+        const newUrl = window.location.origin + window.location.pathname + queryParams;
+        // URLを更新
+        window.history.replaceState({}, null, newUrl);
+        
         // バリデーション: fromYear が toYear よりも小さい場合に警告を表示
         if (this.fromYear && this.toYear && this.fromYear > this.toYear) {
           alert('From年次はTo年次よりも小さくすることはできません。');
