@@ -6,7 +6,7 @@ const book = Vue.createApp({
         employees: [],
         bookId:null,
         canRegister: true,
-        canRent: true,
+        canRent: null,
         canReturn: false,
         registerButtonText: '＋リストに追加',
         rentButtonText: '貸出',
@@ -26,9 +26,14 @@ const book = Vue.createApp({
           const matchingBook = data.find(book => book.id === this.bookId);
           if (matchingBook) {
             this.book = matchingBook;
+            if (matchingBook.status === "貸出可能") {
+              this.canRent = true;
+            } else {
+              this.canRent = false;
+            }
           } else {
             console.error('Book not found.');
-          }
+          }          
         })
         .catch(error => {
           console.error('Error fetching data:', error);
@@ -40,6 +45,12 @@ const book = Vue.createApp({
           const matchingRecords = data.filter(records => records.book_id === this.bookId);
           if (matchingRecords.length > 0) {
             this.records = matchingRecords;
+            if (matchingRecords[0].emp_id === 1) {
+              this.canReturn = true;
+              this.canRent = false;
+            } else {
+              this.canReturnt = false;
+            }
           } else {
             console.error('Record not found.');
           }
@@ -53,6 +64,7 @@ const book = Vue.createApp({
         .then(data => {
             this.recordList = data.goals[0].recordList;
         })
+        
         
       },
       
@@ -85,19 +97,15 @@ const book = Vue.createApp({
         },
 
         registerList() {
-          this.canRegister = !this.canRegister;
-          // 切り替えた後の処理を追加する
-          if (this.canRegister) {
-          // canRegisterがtrueになった後の処理をここに記述
-          }
+          this.canRegister = !this.canRegister;//canRegisterをfalseにして
+          // （要対応）JSONのrecordに今見てるbookを追加、
           
           this.registerButtonText = this.canRegister ? '＋リストに追加' : 'リストに追加済';
         },
+        
         deleteRecord() {
-          this.canRegister = !this.canRegister;
-
-          // ＋リストに追加済 ボタンをクリックした際の処理をここに記述
-          // 例えば、特定の関数を呼び出す、データを更新する、APIを叩くなど
+          this.canRegister = !this.canRegister;//canRegisterをtrueにして
+          // （要対応）JSONのrecordから今見てるbookを削除
 
           this.registerButtonText = this.canRegister ? '＋リストに追加' : 'リストに追加済';
         },
@@ -106,12 +114,16 @@ const book = Vue.createApp({
         rentalBook() {
           this.canRent = false;
           this.canReturn = true; 
+
           this.rentButtonText = this.canRent ? '貸出' : '貸出済';
+          //（要対応？）JSONのbookのstatusを貸出不可にする
+
         },
         returnBook() {
           this.canRent = true; 
           this.canReturn = false; 
           this.rentButtonText = this.canRent ? '貸出' : '貸出済';
+          //（要対応？）JSONのstatusを変えるかメッセージを表示
         }
     },
   });
