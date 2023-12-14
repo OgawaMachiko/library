@@ -264,9 +264,6 @@
       ]
     }
   ],
-
-
-
   "books": [
     {
       "id": 1,
@@ -363,7 +360,7 @@
       "publisher": "オライリージャパン",
       "place": "新川",
       "url": "https://example.com",
-      "status": "貸出可能",
+      "status": "貸出不可",
       "image": "image3.jpg",
       "date": "2021/07/01",
       "chapterList": [
@@ -400,7 +397,7 @@
           ]
         }
       ]
-    },    
+    },
     {
       "id": 4,
       "title": "人月の神話",
@@ -692,7 +689,6 @@
       ]
     }
   ],
-
   "records": [
     {
       "id": 1,
