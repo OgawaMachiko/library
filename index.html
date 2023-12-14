@@ -31,6 +31,7 @@
             <th>職種</th>
             <th>評価☆</th>
             <th>コメント</th>
+            <th v-if="employeeId === 1">削除</th>
           </tr>
           <tr v-for="(record) in goal.recordList" class="tableMain" v-on:click="handleRowClick(record.id)">
             <td class="booktd">{{ getBook(record.record_id) }}</td>
