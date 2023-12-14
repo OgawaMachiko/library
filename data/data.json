@@ -1,22 +1,20 @@
 {
     "employees":[
-      {"emp_id":1, "user_name": "石倉加菜子", "department":"テレコムソリューション事業部", "year":1, "job":"エンジニア",
-        "goalList":[{ "goal_id":1, "goal_name":"デザインエンジニアへのキャリアチェンジ", 
-        "recordList":[{
-          "record_id":1
-        }]
-        }]
-      }
+      {"id":1, "user_name": "石倉加菜子", "department":"テレコムソリューション事業部", "year":1, "job":"エンジニア",
+        "goals":[
+          { "id":1, "goalName":"デザインエンジニアへのキャリアチェンジ", "recordList":[{"id":1,"record_id":1}]},
+          { "id":2, "goalName":"営業のことが知りたい", "recordList":[{"id":1,"record_id":1}]}
+      ]}
     ],
   
     "books":[
-      {"book_id":1, "title":"リーダーブルコード", "author":" Dustin Boswell, Trevor Foucher", "genre":"技術書", 
+      {"id":1, "title":"リーダーブルコード", "author":" Dustin Boswell, Trevor Foucher", "genre":"技術書", 
       "publisher":"オライリージャパン", "place":"みなとみらい","url":"https://example.com", "status":"貸出可能", 
       "image":"image1.jpg", "date":"2018/06/01"}
     ],
   
     "records":[
-      {"record_id":1, "emp_id":1, "book_id":1, "readStatus":"完了", "readYear":1, "readJob":"エンジニア", 
+      {"id":1, "emp_id":1, "book_id":1, "readStatus":"完了", "readYear":1, "readJob":"エンジニア", 
       "color":"#ffc0cb", "star":3, "comment":"早期リターンについて学習できた。"
       }
     ]
