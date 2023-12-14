@@ -1,50 +1,113 @@
 {
-    "employees":[
-      {"id":1, "user_name": "石倉加菜子", "department":"テレコムソリューション事業部", "year":1, "job":"エンジニア",
-        "goals":[
-          { "id":1, "goal_name":"デザインエンジニアへのキャリアチェンジ", "recordList":[
-            {"id":1, "record_id":1},
-            {"id":2, "record_id":2}
+  "employees": [
+    {
+      "id": 1,
+      "user_name": "石倉加菜子",
+      "department": "テレコムソリューション事業部",
+      "year": 1,
+      "job": "エンジニア",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "デザインエンジニアへのキャリアチェンジ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "user_name": "田中",
+      "department": "テレコムソリューション事業部",
+      "year": 1,
+      "job": "デザイナー",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "デザインエンジニアへのキャリアチェンジ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 1
+            },
+            {
+              "id": 1,
+              "record_id": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "リーダーブルコード",
+      "author": " Dustin Boswell, Trevor Foucher",
+      "genre": "技術書",
+      "publisher": "オライリージャパン",
+      "place": "みなとみらい",
+      "url": "https://example.com",
+      "status": "貸出可能",
+      "image": "image1.jpg",
+      "date": "2018/06/01",
+      "chapterList": [
+        {
+          "id": 1,
+          "chap_name": "理解しやすいコード",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 2,
+              "explanation": "「優れた」コードとは読みやすいコードである。"
+            }
           ]
         },
-        { "id":2, "goal_name":"システムエンジニアへのキャリアチェンジ", "recordList":[
-          {"id":1, "record_id":1},
-          {"id":2, "record_id":2}
-        ]
-      }
+        {
+          "id": 2,
+          "chap_name": "名前に情報を詰め込む",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 1,
+              "explanation": "具体的な名前を用いて、情報を詰め込む。汎用的・曖昧な命名を避ける。"
+            },
+            {
+              "id": 2,
+              "emp_id": 2,
+              "explanation": "スコープの大きな変数には長い名前を付ける。"
+            }
+          ]
+        }
       ]
-        },
-      {"id":2, "user_name": "田中", "department":"テレコムソリューション事業部", "year":1, "job":"デザイナー",
-      "goals":[
-        { "id":1, "goal_name":"デザインエンジニアへのキャリアチェンジ", "recordList":[
-          {"id":1, "record_id":1},
-          {"id":1, "record_id":1}
-        ]
-      }]
-      }
-    ],
-  
-    "books":[
-      {"id":1, "title":"リーダーブルコード", "author":" Dustin Boswell, Trevor Foucher", "genre":"技術書", 
-      "publisher":"オライリージャパン", "place":"みなとみらい","url":"https://example.com", "status":"貸出可能", 
-      "image":"image1.jpg", "date":"2018/06/01", "chapterList":[
-        {"id":1, "chap_name":"理解しやすいコード", "chap_explanations":[
-          {"id":1, "emp_id":2, "explanation":"「優れた」コードとは読みやすいコードである。" }]
-        },
-        {"id":2, "chap_name":"名前に情報を詰め込む", "chap_explanations":[
-          {"id":1, "emp_id":1, "explanation":"具体的な名前を用いて、情報を詰め込む。汎用的・曖昧な命名を避ける。" },
-          {"id":2, "emp_id":2, "explanation":"スコープの大きな変数には長い名前を付ける。"}
-        ]}
-      ]}
-    ],
-  
-    "records":[
-      {"id":1, "emp_id":1, "book_id":1, "readStatus":"進行中", "readYear":1, "readJob":"エンジニア", 
-      "color":"#ffc0cb", "star":3, "comment":"早期リターンについて学習できた。"
-      },
-      {"id":2, "emp_id":2, "book_id":1, "readStatus":"予定", "readYear":1, "readJob":"エンジニア", 
-      "color":"#ffc0cb", "star":3, "comment":"早期リターンについて学習できた。"
-      }
-    ]
-    
-  }
+    }
+  ],
+  "records": [
+    {
+      "id": 1,
+      "emp_id": 1,
+      "book_id": 1,
+      "readStatus": "進行中",
+      "readYear": 1,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "早期リターンについて学習できた。"
+    },
+    {
+      "id": 2,
+      "emp_id": 2,
+      "book_id": 1,
+      "readStatus": "予定",
+      "readYear": 1,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "早期リターンについて学習できた。"
+    }
+  ]
+}

@@ -40,7 +40,7 @@
             <td>{{ getJob(record.record_id) }}</td>
             <td>☆ {{ getStar(record.record_id) }}</td>
             <td class="booktd">{{ getComment(record.record_id) }}</td>
-            <td v-if="getStatus(record.record_id) == '予定' && employeeId === 1" v-on:click="handleDeleteClick(1, $event)" class="delete"> × </td>
+            <td v-if="getStatus(record.record_id) == '予定' && employeeId === 1" v-on:click="handleDeleteClick(record.id,$event)" class="delete"> × </td>
             <td v-else-if="employeeId === 1" class="hyphen"> - </td>
         </tr>    
       </table>

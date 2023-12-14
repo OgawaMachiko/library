@@ -11,6 +11,7 @@ const book = Vue.createApp({
         registerButtonText: '＋リストに追加',
         rentButtonText: '貸出',
         returnButtonText: '返却',
+        recordList:[],
       };
 
       
@@ -47,20 +48,11 @@ const book = Vue.createApp({
           console.error('Error fetching data:', error);
         });
 
-        fetch(`http://localhost:3000/employees`) 
+        fetch(`http://localhost:3000/employees/1`)
         .then(response => response.json())
         .then(data => {
-          this.employees = data;
-          // const matchingEmployees = data.filter(employees => records.book_id === this.bookId);
-          // if (matchingEmployees.length > 0) {
-          //   this.employees = matchingEmployees;
-          // } else {
-          //   console.error('Employee not found.');
-          // }
+            this.recordList = data.goals[0].recordList;
         })
-        .catch(error => {
-          console.error('Error fetching data:', error);
-        });
         
       },
       
