@@ -78,8 +78,21 @@ const app = Vue.createApp({
       this.selectedJobs = [];
       this.isFilterCleared = true;
       this.searchEmployees();
-    }
+    },
+    getNumOfBooks(empId) {
+      const employee = this.employees.find(emp => emp.id === empId);
+
+      let totalNum = 0;
+
+      for (let i = 0; i < employee.goals.length; i++) {
+        const num = employee.goals[i].recordList.length;
+        totalNum += num;
+      }
+
+      return totalNum !== undefined ? totalNum : 'Unknown';
+  } 
+},
   }
-});
+);
 
 app.mount('#employee');

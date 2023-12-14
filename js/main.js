@@ -1,14 +1,11 @@
 const app = Vue.createApp({
   data() {
     return {
-      goals: [],
-      employee: null,
       employeeId: null,
-    };
-  },
-  dataBook() {
-    return {
-      books: []
+      employee:null,
+      goals:[],
+      records:[],
+      books:[],
     };
   },
   mounted() {
@@ -20,17 +17,28 @@ const app = Vue.createApp({
     fetch(`http://localhost:3000/employees/`)
       .then(response => response.json())
       .then(data => {
-        const matchingEmployee = data.find(employee => employee.id === this.employeeId);
-        if (matchingEmployee) {
-          this.employee = matchingEmployee;
+        const targetEmp = data.find(emp => emp.id === this.employeeId)
+        if (targetEmp) {
+          this.employee = targetEmp;
+          this.goals = targetEmp.goals
         } else {
           console.error('Employee not found.');
         }
       })
-    fetch(`http://localhost:3000/book`)
+
+    fetch(`http://localhost:3000/records/`)
       .then(response => response.json())
-      .then(dataBook => {
-        this.books = dataBook;
+      .then(recordData => {
+        this.records = recordData;
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      })
+
+      fetch(`http://localhost:3000/books/`)
+      .then(response => response.json())
+      .then(booksData => {
+        this.books = booksData;
       })
       .catch(error => {
         console.error('Error fetching data:', error);
@@ -41,7 +49,9 @@ const app = Vue.createApp({
     home() {
       this.$router.push('./index.html')
     },
-    handleRowClick(bookId) {
+    handleRowClick(recordId) {
+      const targetRecord = this.records.find(data => data.id === recordId);
+      const bookId = targetRecord.book_id;
       window.location.href = 'http://127.0.0.1:3000/book.html?id=' + bookId;
 
     },
@@ -73,6 +83,35 @@ const app = Vue.createApp({
     },
     goBack() {
       window.history.back();
+    },
+    getBook(recordId){
+      const targetRecord = this.records.find(data => data.id === recordId);
+      const returnBook = this.books.find(data => data.id === targetRecord.book_id)
+      return returnBook ? returnBook.title :"unknown";
+    },
+    getStatus(recordId){
+      const returnRecord = this.records.find(data => data.id === recordId);
+      return returnRecord ? returnRecord.readStatus :"unknown";
+    },
+    getYear(recordId){
+      const returnRecord = this.records.find(data => data.id === recordId);
+      return returnRecord ? returnRecord.readYear :"unknown";
+    },
+    getJob(recordId){
+      const returnRecord = this.records.find(data => data.id === recordId);
+      return returnRecord ? returnRecord.readJob :"unknown";
+    },
+    getStar(recordId){
+      const returnRecord = this.records.find(data => data.id === recordId);
+      return returnRecord ? returnRecord.star :"unknown";
+    },
+    getComment(recordId){
+      const returnRecord = this.records.find(data => data.id === recordId);
+      return returnRecord ? returnRecord.comment :"unknown";
+    },
+    getColor(recordId){
+      const returnRecord = this.records.find(data => data.id === recordId);
+      return returnRecord ? returnRecord.color :"unknown";
     },
   }
 });
