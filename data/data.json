@@ -28,7 +28,7 @@
       "goals": [
         {
           "id": 1,
-          "goal_name": "デザインエンジニアとしてスキルアップ",
+          "goal_name": "デザインエンジニアへのキャリアチェンジ",
           "recordList": [
             {
               "id": 1,
@@ -42,7 +42,7 @@
         },
         {
           "id": 2,
-          "goal_name": "システムエンジニアへのキャリアチェンジ",
+          "goal_name": "デザイナーとしてスキルアップ",
           "recordList": [
             {
               "id": 1,
@@ -260,6 +260,32 @@
               "record_id": 26
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "user_name": "西村理子",
+      "department": "テレコムソリューション事業部",
+      "year": 3,
+      "job": "営業",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "営業スキルの習得",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 27
+            },
+            {
+              "id": 2,
+              "record_id": 28
+            },
+            {
+              "id": 3,
+              "record_id": 29
+            }          ]
         }
       ]
     }
@@ -973,6 +999,39 @@
       "color": "#afeeee",
       "star": null,
       "comment": ""
+    },
+    {
+      "id": 27,
+      "emp_id": 10,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 1,
+      "readJob": "営業",
+      "color": "#ffc0cb",
+      "star": 4,
+      "comment": "新たな営業手法や成功事例について学びながら、実践に取り入れられた。"
+    },
+    {
+      "id": 28,
+      "emp_id": 10,
+      "book_id": 9,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "営業",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "営業戦略の新しい視点を得ることができ、実践に役立てることができました。"
+    },
+    {
+      "id": 29,
+      "emp_id": 10,
+      "book_id": 10,
+      "readStatus": "進行中",
+      "readYear": 3,
+      "readJob": "営業",
+      "color": "#afeeee",
+      "star": null,
+      "comment": "新たな営業手法や成功事例について学びながら、実践に取り入れています。"
     }
   ]
 }
