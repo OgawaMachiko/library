@@ -89,3 +89,22 @@ td{
     background-color: #eeeeee;
     cursor: pointer;
 }
+
+.delete{
+    text-align: center;
+    font-size: 100%;
+    color: silver;
+}
+
+.delete:hover{
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    color: black;
+}
+
+.hyphen{
+    text-align: center;
+    font-size: 100%;
+    color: silver;
+}
