@@ -9,7 +9,7 @@
 <body>
   <div id="book" class="app">
     <button @click="goBack()" class="return">戻る</button>
-      <button v-on:click="handleRowClickEmp(0)" class="menuTab">マイページ</button>
+      <button v-on:click="handleRowClickEmp(1)" class="menuTab">マイページ</button>
       <button v-on:click="handleRowClickAllEmp(0)" class="menuTab">社員検索ページ</button>
       <div class="bookHeader">
         <h2> {{ book.title }}</h2>
@@ -56,7 +56,7 @@
       </div>
     </div>
     <div class="review">■レビュー</div>
-    <div  v-for="(comment, index) in comments" :key="index"  class="comments">
+    <div  v-for="(record, index) in records" :key="index"  class="comments">
       <table>
         <thead>
           <tr>
@@ -64,15 +64,32 @@
         </thead>
         <tbody class="tbody">
           <tr>
-            <td v-on:click="handleRowClickEmp(comment.id)" class="user_name"> 名前: {{ comment.user_name }}</td>
-            <td class="star"> 評価：☆{{ comment.star }}</td>
+            <td v-on:click="handleRowClickEmp(record.record_id)" class="user_name"> 名前: {{ getUserName(record.emp_id) }}</td>
+            <td class="star"> 評価：☆{{ record.star }}</td>
           </tr>
         </tbody>
       </table>
-      <p class="comment">{{ comment.review }}</p>
+      <p class="comment">{{ record.comment }}</p>
     </div>
     <div class="explanation">■解説</div>
-    <div  v-for="(chapter, index) in explanations" :key="index" class="chapter">
+    <div v-for="(chapter, index) in book.chapterList" :key="index" class="chpater">
+      <p class="chapter_name">{{ chapter.chap_id }}章：{{chapter.chap_name}}</p>
+      <div v-for="(explanation, index1) in chapter.chap_explanations" :key="index1" 
+         class="comments">
+      <table>
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr>
+            <td v-on:click="handleRowClickEmp(explanation.id)" class="user_name">名前：{{ getUserName(explanation.emp_id) }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="comment">{{ explanation.explanation }}</p>
+    </div>
+    <!-- <div  v-for="(chapter, index) in explanations" :key="index" class="chapter">
       <p class="chapter_name">{{ chapter.chap_id }}章：{{chapter.chap_name}}</p>
       <div v-for="(explanation, index1) in explanations[index].chap_explanations" :key="index1" 
          class="comments">
@@ -88,8 +105,8 @@
         </tbody>
       </table>
       <p class="comment">{{ explanation.explanation }}</p>
-    </div>
-    </div>
+    </div> 
+    </div> -->
 
   </div>
   <script src ="js/book.js"></script>
