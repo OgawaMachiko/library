@@ -5,7 +5,13 @@ const book = Vue.createApp({
         comments: [],
         explanations: [],
         bookId:null,
-        employeeId:null
+        employeeId:null,
+        canRegister: true,
+        canRent: true,
+        canReturn: false,
+        registerButtonText: '＋リストに追加',
+        rentButtonText: '貸出',
+        returnButtonText: '返却'
       };
     },
     mounted() {
@@ -45,6 +51,44 @@ const book = Vue.createApp({
         goBack() {
           window.history.back();
         },  
+
+        toggleRegistration() {
+          if (this.canRegister) {
+            this.registerList();
+          } else {
+            this.deleteRecord();
+          }
+        },
+
+        registerList() {
+          this.canRegister = !this.canRegister;
+          // 切り替えた後の処理を追加する
+          if (this.canRegister) {
+          // canRegisterがtrueになった後の処理をここに記述
+          }
+          
+          this.registerButtonText = this.canRegister ? '＋リストに追加' : 'リストに追加済';
+        },
+        deleteRecord() {
+          this.canRegister = !this.canRegister;
+
+          // ＋リストに追加済 ボタンをクリックした際の処理をここに記述
+          // 例えば、特定の関数を呼び出す、データを更新する、APIを叩くなど
+
+          this.registerButtonText = this.canRegister ? '＋リストに追加' : 'リストに追加済';
+        },
+
+
+        rentalBook() {
+          this.canRent = false;
+          this.canReturn = true; 
+          this.rentButtonText = this.canRent ? '貸出' : '貸出済';
+        },
+        returnBook() {
+          this.canRent = true; 
+          this.canReturn = false; 
+          this.rentButtonText = this.canRent ? '貸出' : '貸出済';
+        }
     },
   });
   book.mount('#book');
