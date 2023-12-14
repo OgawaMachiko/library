@@ -60,8 +60,8 @@
           <td class="user_name">{{ employee.user_name }}</td>
           <td>{{ employee.job }}</td>
           <td>{{ employee.year }} 年目</td>
-          <td>{{ employee.bookCount }} 冊</td>
-          <td class="goalth">{{employee.goalList[employee.goalList.length-1].goal}}</td>
+          <td>{{ getNumOfBooks(employee.id) }} 冊</td>
+          <td class="goalth">{{employee.goals[employee.goals.length-1].goal_name}}</td>
         </tr>
       </table>
     </div>
