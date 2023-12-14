@@ -45,7 +45,7 @@ const book = Vue.createApp({
         .then(response => response.json())
         .then(data => {
           const matchingRecords = data.filter(records => records.book_id === this.bookId);
-          if (matchingRecords.length > 0) {
+          if (matchingRecords.length > 0 ) {
             this.records = matchingRecords;
             // if (matchingRecords[0].emp_id === 1) {
             //   this.canReturn = true;
@@ -64,11 +64,13 @@ const book = Vue.createApp({
           console.error('Error fetching data:', error);
         });
 
-        fetch(`http://localhost:3000/employees/1`)
+        fetch(`http://localhost:3000/employees/`)
         .then(response => response.json())
         .then(data => {
-            this.recordList = data.goals[0].recordList;
+            // this.recordList = data.goals[0].recordList;
+            this.employees = data;
         })
+
         
         
       },

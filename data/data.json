@@ -285,7 +285,8 @@
             {
               "id": 3,
               "record_id": 29
-            }          ]
+            }
+          ]
         }
       ]
     }
@@ -387,7 +388,6 @@
       "place": "新川",
       "url": "https://example.com",
       "status": "貸出不可",
-      "status": "貸出不可",
       "image": "image3.jpg",
       "date": "2021/07/01",
       "chapterList": [
@@ -424,7 +424,6 @@
           ]
         }
       ]
-    },
     },
     {
       "id": 4,
@@ -755,12 +754,12 @@
       "id": 4,
       "emp_id": 2,
       "book_id": 2,
-      "readStatus": "進行中",
+      "readStatus": "完了",
       "readYear": 4,
       "readJob": "エンジニア",
-      "color": "#afeeee",
-      "star": 0,
-      "comment": "システムエンジニアへのキャリアチェンジに向けて学習中。"
+      "color": "#ffc0cb",
+      "star": null,
+      "comment": "サービスデザインの考え方について0から学べる良書でした。"
     },
     {
       "id": 5,
@@ -770,8 +769,8 @@
       "readYear": 5,
       "readJob": "営業",
       "color": "#ffc0cb",
-      "star": 0,
-      "comment": "エンジニアへのキャリアチェンジに向けて学習中。"
+      "star": 3,
+      "comment": "プロジェクト管理について理解を深められた。"
     },
     {
       "id": 6,
@@ -781,7 +780,7 @@
       "readYear": 7,
       "readJob": "",
       "color": "#ffc0cb",
-      "star": 0,
+      "star": 3,
       "comment": "命名規則を初めて学ぶこができた。"
     },
     {
@@ -792,8 +791,8 @@
       "readYear": 4,
       "readJob": "エンジニア",
       "color": "#ffc0cb",
-      "star": 0,
-      "comment": "早期リターンについて学習できた。"
+      "star": 5,
+      "comment": "早期リターンを初めて知った。"
     },
     {
       "id": 8,
@@ -803,7 +802,7 @@
       "readYear": 6,
       "readJob": "エンジニア",
       "color": "#ffc0cb",
-      "star": 0,
+      "star": 5,
       "comment": "人月という単位について理解を深められた。"
     },
     {
@@ -836,7 +835,7 @@
       "readYear": 5,
       "readJob": "エンジニア",
       "color": "#ffc0cb",
-      "star": null,
+      "star": 3,
       "comment": "負の要素がないので、読んでいて気持ちがいい"
     },
     {
@@ -880,7 +879,7 @@
       "readYear": 5,
       "readJob": "",
       "color": "#ffc0cb",
-      "star": null,
+      "star": 5,
       "comment": "AIの進化と共に変わる営業の在り方について理解できる。未来の営業に向けた示唆に富んだ一冊。"
     },
     {
@@ -891,7 +890,7 @@
       "readYear": 5,
       "readJob": "",
       "color": "#ffc0cb",
-      "star": null,
+      "star": 5,
       "comment": "営業の基本から応用まで、豊富な実例を交えて解説されており、実践的な視点が得られる。"
     },
     {
@@ -924,7 +923,7 @@
       "readYear": 4,
       "readJob": "デザイナー",
       "color": "#ffc0cb",
-      "star": null,
+      "star": 4,
       "comment": "AI時代における営業活動の新たな可能性に驚き、クリエイティブな視点で営業にアプローチすることを学びました。"
     },
     {
@@ -935,9 +934,10 @@
       "readYear": 5,
       "readJob": "デザイナー",
       "color": "#ffc0cb",
-      "star": null,
+      "star": 4,
       "comment": "営業の心理を理解し、クライアントとのコミュニケーションスキル向上に役立ちました。"
-    },{
+    },
+    {
       "id": 21,
       "emp_id": 8,
       "book_id": 4,
@@ -959,7 +959,8 @@
       "star": 5,
       "comment": "コンサルタントとしてのスキル向上に寄与し、技術アドバイスの人間学に関する知識が深まりました。"
     },
-    {"id": 23,
+    {
+      "id": 23,
       "emp_id": 9,
       "book_id": 6,
       "readStatus": "完了",
@@ -1033,7 +1034,7 @@
       "readJob": "営業",
       "color": "#afeeee",
       "star": null,
-      "comment": "新たな営業手法や成功事例について学びながら、実践に取り入れています。"
+      "comment": ""
     }
   ]
 }
