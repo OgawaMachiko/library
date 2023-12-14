@@ -50,7 +50,9 @@ const app = Vue.createApp({
     home() {
       this.$router.push('./index.html')
     },
-    handleRowClick(bookId) {
+    handleRowClick(recordId) {
+      const targetRecord = this.records.find(data => data.id === recordId);
+      const bookId = targetRecord.book_id;
       window.location.href = 'http://127.0.0.1:3000/book.html?id=' + bookId;
 
     },
@@ -92,7 +94,6 @@ const app = Vue.createApp({
       const returnRecord = this.records.find(data => data.id === recordId);
       return returnRecord ? returnRecord.color :"unknown";
     },
-
   }
 });
 app.mount('#app');

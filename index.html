@@ -32,7 +32,7 @@
             <th>評価☆</th>
             <th>コメント</th>
           </tr>
-          <tr v-for="(record) in goal.recordList" class="tableMain">
+          <tr v-for="(record) in goal.recordList" class="tableMain" v-on:click="handleRowClick(record.id)">
               <td class="booktd">{{ getBook(record.record_id) }}</td>
               <td><div class="bookStatus" :style="{backgroundColor:getColor(record.record_id)}">{{ getStatus(record.record_id) }}</div></td>
               <td>{{ getYear(record.record_id) }} 年目</td>
