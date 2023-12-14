@@ -69,11 +69,11 @@
           "recordList": [
             {
               "id": 1,
-              "record_id": 1
+              "record_id": 5
             },
             {
-              "id": 1,
-              "record_id": 1
+              "id": 2,
+              "record_id": 6
             }
           ]
         }
@@ -89,7 +89,16 @@
         {
           "id": 1,
           "goal_name": "スクラムマスターへのキャリアアップ",
-          "recordList": []
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 6
+            },
+            {
+              "id": 2,
+              "record_id": 7
+            }
+          ]
         }
       ]
     },
@@ -103,12 +112,30 @@
         {
           "id": 1,
           "goal_name": "アプリエンジニアとしてのキャリアアップ",
-          "recordList": []
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 9
+            },
+            {
+              "id": 2,
+              "record_id": 10
+            }
+          ]
         },
         {
           "id": 2,
           "goal_name": "営業担当者の理解",
-          "recordList": []
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 11
+            },
+            {
+              "id": 2,
+              "record_id": 12
+            }
+          ]
         }
       ]
     },
@@ -123,14 +150,28 @@
           "id": 1,
           "goal_name": "アプリエンジニアとしてのキャリアアップ",
           "recordList": [
-            
+            {
+              "id": 1,
+              "record_id": 13
+            },
+            {
+              "id": 2,
+              "record_id": 14
+            }
           ]
         },
         {
           "id": 2,
           "goal_name": "営業へのキャリアチェンジ",
           "recordList": [
-            
+            {
+              "id": 1,
+              "record_id": 15
+            },
+            {
+              "id": 2,
+              "record_id": 16
+            }
           ]
         }
       ]
@@ -146,14 +187,28 @@
           "id": 1,
           "goal_name": "デザイナーとしてのキャリアアップ",
           "recordList": [
-
+            {
+              "id": 1,
+              "record_id": 17
+            },
+            {
+              "id": 2,
+              "record_id": 18
+            }
           ]
         },
         {
           "id": 2,
           "goal_name": "営業職の理解",
           "recordList": [
-
+            {
+              "id": 1,
+              "record_id": 19
+            },
+            {
+              "id": 2,
+              "record_id": 20
+            }
           ]
         }
       ]
@@ -169,7 +224,14 @@
           "id": 1,
           "goal_name": "エンジニアとしてのスキルアップ",
           "recordList": [
-            
+            {
+              "id": 1,
+              "record_id": 21
+            },
+            {
+              "id": 2,
+              "record_id": 22
+            }
           ]
         }
       ]
@@ -648,6 +710,203 @@
       "color": "#afeeee",
       "star": 0,
       "comment": "システムエンジニアへのキャリアチェンジに向けて学習中。"
+    },
+    {
+      "id": 5,
+      "emp_id": 3,
+      "book_id": 4,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "営業",
+      "color": "#ffc0cb",
+      "star": 0,
+      "comment": "エンジニアへのキャリアチェンジに向けて学習中。"
+    },
+    {
+      "id": 6,
+      "emp_id": 3,
+      "book_id": 1,
+      "readStatus": "完了",
+      "readYear": 7,
+      "readJob": "",
+      "color": "#ffc0cb",
+      "star": 0,
+      "comment": "命名規則を初めて学ぶこができた。"
+    },
+    {
+      "id": 7,
+      "emp_id": 4,
+      "book_id": 1,
+      "readStatus": "完了",
+      "readYear": 4,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 0,
+      "comment": "早期リターンについて学習できた。"
+    },
+    {
+      "id": 8,
+      "emp_id": 4,
+      "book_id": 4,
+      "readStatus": "完了",
+      "readYear": 6,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 0,
+      "comment": "人月という単位について理解を深められた。"
+    },
+    {
+      "id": 9,
+      "emp_id": 5,
+      "book_id": 5,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "アプリ開発について学ぶことができた。"
+    },
+    {
+      "id": 10,
+      "emp_id": 5,
+      "book_id": 6,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "NGを学ぶことで正解に近づける。"
+    },
+    {
+      "id": 11,
+      "emp_id": 2,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": null,
+      "comment": "負の要素がないので、読んでいて気持ちがいい"
+    },
+    {
+      "id": 12,
+      "emp_id": 2,
+      "book_id": 9,
+      "readStatus": "進行中",
+      "readYear": 5,
+      "readJob": "エンジニア",
+      "color": "#afeeee",
+      "star": null,
+      "comment": ""
+    },
+    {
+      "id": 13,
+      "emp_id": 6,
+      "book_id": 5,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "アプリ開発について学ぶことができた。HTMLとCSSの基本から応用まで、非常に分かりやすい解説だった。"
+    },
+    {
+      "id": 14,
+      "emp_id": 6,
+      "book_id": 6,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "NGを学ぶことで正解に近づける。デザインの基本について再確認できる良書。"
+    },
+    {
+      "id": 15,
+      "emp_id": 6,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "",
+      "color": "#ffc0cb",
+      "star": null,
+      "comment": "AIの進化と共に変わる営業の在り方について理解できる。未来の営業に向けた示唆に富んだ一冊。"
+    },
+    {
+      "id": 16,
+      "emp_id": 6,
+      "book_id": 9,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "",
+      "color": "#ffc0cb",
+      "star": null,
+      "comment": "営業の基本から応用まで、豊富な実例を交えて解説されており、実践的な視点が得られる。"
+    },
+    {
+      "id": 17,
+      "emp_id": 7,
+      "book_id": 6,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "Webデザインの奥深さを知り、アプリ開発においてユーザビリティ向上の手法を習得しました。"
+    },
+    {
+      "id": 18,
+      "emp_id": 7,
+      "book_id": 7,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "デザインの不可解な要素に気づき、良いデザインの要素を把握しました。"
+    },
+    {
+      "id": 19,
+      "emp_id": 7,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 4,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": null,
+      "comment": "AI時代における営業活動の新たな可能性に驚き、クリエイティブな視点で営業にアプローチすることを学びました。"
+    },
+    {
+      "id": 20,
+      "emp_id": 7,
+      "book_id": 9,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": null,
+      "comment": "営業の心理を理解し、クライアントとのコミュニケーションスキル向上に役立ちました。"
+    },{
+      "id": 21,
+      "emp_id": 8,
+      "book_id": 4,
+      "readStatus": "完了",
+      "readYear": 7,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "人月という単位についての洞察を深め、プロジェクト管理においての新たな視点を得ました。"
+    },
+    {
+      "id": 22,
+      "emp_id": 8,
+      "book_id": 10,
+      "readStatus": "完了",
+      "readYear": 8,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "コンサルタントとしてのスキル向上に寄与し、技術アドバイスの人間学に関する知識が深まりました。"
     }
   ]
 }
