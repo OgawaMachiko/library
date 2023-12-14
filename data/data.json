@@ -4,12 +4,12 @@
         "goals":[
           { "id":1, "goal_name":"デザインエンジニアへのキャリアチェンジ", "recordList":[
             {"id":1, "record_id":1},
-            {"id":1, "record_id":1}
+            {"id":2, "record_id":2}
           ]
         },
         { "id":2, "goal_name":"システムエンジニアへのキャリアチェンジ", "recordList":[
           {"id":1, "record_id":1},
-          {"id":1, "record_id":1}
+          {"id":2, "record_id":2}
         ]
       }
       ]
@@ -39,10 +39,10 @@
     ],
   
     "records":[
-      {"id":1, "emp_id":1, "book_id":1, "readStatus":"完了", "readYear":1, "readJob":"エンジニア", 
+      {"id":1, "emp_id":1, "book_id":1, "readStatus":"進行中", "readYear":1, "readJob":"エンジニア", 
       "color":"#ffc0cb", "star":3, "comment":"早期リターンについて学習できた。"
       },
-      {"id":2, "emp_id":2, "book_id":1, "readStatus":"完了", "readYear":1, "readJob":"エンジニア", 
+      {"id":2, "emp_id":2, "book_id":1, "readStatus":"予定", "readYear":1, "readJob":"エンジニア", 
       "color":"#ffc0cb", "star":3, "comment":"早期リターンについて学習できた。"
       }
     ]

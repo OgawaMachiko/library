@@ -58,6 +58,26 @@ const app = Vue.createApp({
     handleRowClickEmp(employeeId) {
       window.location.href = 'http://127.0.0.1:3000/index.html?id=' + employeeId;
     },
+    handleDeleteClick(id, event){
+      event.stopPropagation();
+      
+      var result = window.confirm('読書予定を削除しますか？')
+      if(!result){
+        return
+      }
+
+      // fetch(`http://localhost:3000/book` + id, {
+      //   mothod: 'DELETE',
+      // }).then((response) => {
+      //   if(!response.ok) {
+      //       throw new Error('error');
+      //   }        
+      // }).then(()  => {
+      //     id.remove()
+      // }).catch((error) => {
+      //   console.error('Error deleting data:', error);
+      // });
+    },
     handleRowClickAllEmp() {
       window.location.href = 'http://127.0.0.1:3000/employee.html';
     },

@@ -104,3 +104,22 @@ td{
 .booktd{
     text-align: left;
 }
+
+.delete{
+    text-align: center;
+    font-size: 100%;
+    color: silver;
+}
+
+.delete:hover{
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
+}
+
+.hyphen{
+    text-align: center;
+    font-size: 100%;
+    color: silver;
+}
