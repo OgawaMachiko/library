@@ -28,8 +28,10 @@ const book = Vue.createApp({
             this.book = matchingBook;
             if (matchingBook.status === "貸出可能") {
               this.canRent = true;
+              this.canReturn = false;
             } else {
               this.canRent = false;
+              this.canReturn = true;
             }
           } else {
             console.error('Book not found.');
@@ -107,10 +109,16 @@ const book = Vue.createApp({
         },
 
         rentalBook() {
+          var result = window.confirm('この本を予約します。\r\nよろしいですか。')
+          if(!result){
+            return;
+          }
+
           this.canRent = false;
           this.canReturn = true; 
 
-          this.rentButtonText = this.canRent ? '貸出' : '貸出済';
+          
+
           fetch(`http://localhost:3000/books/${this.bookId}/`, {
             method: 'PUT',
             headers: {
@@ -145,9 +153,15 @@ const book = Vue.createApp({
 
         },
         returnBook() {
+
+          var result = window.confirm('この本を返却します。\r\n借りている本であることを確認してください。')
+          if(!result){
+            return;
+          }
+
           this.canRent = true; 
           this.canReturn = false; 
-          this.rentButtonText = this.canRent ? '貸出' : '貸出済';
+
           fetch(`http://localhost:3000/books/${this.bookId}/`, {
             method: 'PUT',
             headers: {
