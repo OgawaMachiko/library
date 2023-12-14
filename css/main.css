@@ -1,6 +1,13 @@
 .app{
     padding: 48px;
 }
+
+body {
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+  }
+
 .return{
     border-radius: 8px;
     font-size: 12px;
@@ -96,4 +103,23 @@ td{
 
 .booktd{
     text-align: left;
+}
+
+.delete{
+    text-align: center;
+    font-size: 100%;
+    color: silver;
+}
+
+.delete:hover{
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
+}
+
+.hyphen{
+    text-align: center;
+    font-size: 100%;
+    color: silver;
 }

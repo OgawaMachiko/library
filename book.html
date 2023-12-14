@@ -12,18 +12,38 @@
       <button v-on:click="handleRowClickEmp(1)" class="menuTab">マイページ</button>
       <button v-on:click="handleRowClickAllEmp(0)" class="menuTab">社員検索ページ</button>
       <div class="bookHeader">
-        <h2> {{ book.title }}</h2>
-        <div class="toMyListButton">
-          
+        <div  class="bookTitle"><h2> {{ book.title }}</h2>
+        <div class="ListButtons">
+        <div>
+          <button @click="toggleRegistration()"
+          class="toMyListButton" :class="{ 'registerDone': !canRegister }">
+
+          <!-- <button @click="canRegister ? registerList() : deleteRecord()"
+          class="toMyListButton" :class="{ 'registerDone': !canRegister }"> -->
+            {{ registerButtonText }}
+          </button>
         </div>
 
         <div class="requestButtons">
-          <div class="rentalBook"></div>
-            <div class="returnBook"></div>
+          <div>
+            <button @click="rentalBook()" :disabled="!canRent" 
+            class="rentalBook" :class="{ 'disabledButton': !canRent }">
+              {{ rentButtonText }}
+            </button>
+          </div>
+          <div>
+              <button @click="returnBook()" :disabled="!canReturn"
+              class="returnBook" :class="{ 'disabledButton': !canReturn }">
+                {{ returnButtonText }}
+              </button>
+          </div>
         </div>
+        </div>
+      </div>
 
       <div>
-    <div class="bookData">
+
+    <div class="bookDataDetail">
       <div>
         <img v-bind:src="'images/' + book.image" alt="bookImage" class="img">
       </div>
@@ -109,6 +129,7 @@
     </div> -->
 
   </div>
+
   <script src ="js/book.js"></script>
 </body>
 </html>
