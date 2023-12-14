@@ -45,12 +45,12 @@ const book = Vue.createApp({
           const matchingRecords = data.filter(records => records.book_id === this.bookId);
           if (matchingRecords.length > 0) {
             this.records = matchingRecords;
-            // if (matchingRecords[0].emp_id === 1) {
-            //   this.canReturn = true;
-            //   this.canRent = false;
-            // } else {
-            //   this.canReturnt = false;
-            // }
+            if (matchingRecords[0].emp_id === 1) {
+              this.canRegister = true;
+              this.canRegister = false;
+            } else {
+              this.canReturnt = false;
+            }
           } else {
             console.error('Record not found.');
           }

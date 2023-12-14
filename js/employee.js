@@ -32,7 +32,7 @@ const app = Vue.createApp({
         const newUrl = window.location.origin + window.location.pathname + queryParams;
         // URLを更新
         window.history.replaceState({}, null, newUrl);
-        
+          
         // バリデーション: fromYear が toYear よりも小さい場合に警告を表示
         if (this.fromYear && this.toYear && this.fromYear > this.toYear) {
           alert('From年次はTo年次よりも小さくすることはできません。');
