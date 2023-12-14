@@ -56,6 +56,7 @@ const app = Vue.createApp({
     },
     handleRowClick(recordId) {
       const targetRecord = this.records.find(data => data.id === recordId);
+      console.log(targetRecord);
       const bookId = targetRecord.book_id;
       window.location.href = 'http://127.0.0.1:3000/book.html?id=' + bookId;
 
