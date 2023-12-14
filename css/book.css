@@ -2,6 +2,12 @@
     padding: 48px;
 }
 
+body {
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+  }
+
 .return{
     border-radius: 8px;
     font-size: 12px;
@@ -18,6 +24,99 @@
 .return:active {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
 }
+
+.toMyListButton{
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 18px;
+    border: solid 2px #aaaaaa;
+    background-color: white;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 16px;
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 180px;
+    height:44px;
+}
+
+.toMyListButton:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+.toMyListButton:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+}
+
+.registerDone {
+    background-color: #ff6fc3; 
+
+    opacity: 0.6; 
+    color: #000000;
+}
+
+.registerDone:hover{
+    background-color: #ff6fc3a9;
+    cursor: pointer;
+}
+.registerDone:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+}
+
+.rentalBook{
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 16px;
+    border: solid 2px #aaaaaa;
+    background-color: #005FFF	;
+    color: #eeeeee;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 220px;
+    margin-top: 20px;
+    width: 160px;
+}
+
+.rentalBook:hover{
+    background-color: #005effc2;
+    cursor: pointer;
+}
+.rentalBook:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+}
+
+.returnBook {
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 16px;
+    border: solid 2px #aaaaaa;
+    background-color: #FF6600	;
+    color: #eeeeee;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 4px;
+    margin-top: 20px;
+    width: 160px;
+}
+
+.returnBook:hover{
+    background-color: #ff6600ce;
+    cursor: pointer;
+}
+.returnBook:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+}
+
+.disabledButton {
+    background-color: #ccc; 
+    pointer-events: none; 
+    cursor: not-allowed; 
+    opacity: 0.6; 
+    color: #7d7d7d;
+  }
+
 
 .menuTab{
     width:130px;
@@ -39,13 +138,35 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
 }
 
-.bookData{
+.bookHeader {
+    justify-content: center;
+    align-items: center;
+}
+
+.bookTitle {
+    display: flex;
+    margin-top: 20px;
+}
+
+.ListButtons{
+    display: flex;
+}
+
+.requestButtons{
+    display: flex;
+}
+
+.bookDataDetail{
     display: flex;
     line-height: 10px;
     width: 1272px;
     border-bottom: #aaaaaa solid 2px;
     border-top: #aaaaaa solid 2px;
     margin-bottom: 24px;
+}
+
+.bookflexrow {
+    display: row;
 }
 
 .detailHead{

@@ -4,12 +4,20 @@ const book = Vue.createApp({
         book: null,
         records: [],
         employees: [],
-        bookId:1,
-      }
+        bookId:null,
+        canRegister: true,
+        canRent: true,
+        canReturn: false,
+        registerButtonText: '＋リストに追加',
+        rentButtonText: '貸出',
+        returnButtonText: '返却',
+      };
+
+      
     },
     mounted() {
-      // var params = new URLSearchParams(window.location.search);
-      // this.bookId = parseInt(params.get('id'));
+      var params = new URLSearchParams(window.location.search);
+      this.bookId = parseInt(params.get('id'));
 
       fetch(`http://localhost:3000/books`) 
         .then(response => response.json())
@@ -70,10 +78,49 @@ const book = Vue.createApp({
         goBack() {
           window.history.back();
         },  
+
         getUserName(empId) {
           const employee = this.employees.find(emp => emp.id === empId);
           return employee ? employee.user_name : 'Unknown';
         },
+
+        toggleRegistration() {
+          if (this.canRegister) {
+            this.registerList();
+          } else {
+            this.deleteRecord();
+          }
+        },
+
+        registerList() {
+          this.canRegister = !this.canRegister;
+          // 切り替えた後の処理を追加する
+          if (this.canRegister) {
+          // canRegisterがtrueになった後の処理をここに記述
+          }
+          
+          this.registerButtonText = this.canRegister ? '＋リストに追加' : 'リストに追加済';
+        },
+        deleteRecord() {
+          this.canRegister = !this.canRegister;
+
+          // ＋リストに追加済 ボタンをクリックした際の処理をここに記述
+          // 例えば、特定の関数を呼び出す、データを更新する、APIを叩くなど
+
+          this.registerButtonText = this.canRegister ? '＋リストに追加' : 'リストに追加済';
+        },
+
+
+        rentalBook() {
+          this.canRent = false;
+          this.canReturn = true; 
+          this.rentButtonText = this.canRent ? '貸出' : '貸出済';
+        },
+        returnBook() {
+          this.canRent = true; 
+          this.canReturn = false; 
+          this.rentButtonText = this.canRent ? '貸出' : '貸出済';
+        }
     },
   });
   book.mount('#book');

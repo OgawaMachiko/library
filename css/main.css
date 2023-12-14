@@ -1,6 +1,13 @@
 .app{
     padding: 48px;
 }
+
+body {
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+  }
+
 .return{
     border-radius: 8px;
     font-size: 12px;

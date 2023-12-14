@@ -2,9 +2,12 @@
     display: flex;
     flex-direction: column;
     padding: 48px;
-    width: 100%;
-    max-width: 1272px;
-    margin: 0 auto;
+  }
+
+  body {
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
   }
   
   .title {
