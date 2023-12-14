@@ -4,12 +4,12 @@ const book = Vue.createApp({
         book: null,
         records: [],
         employees: [],
-        bookId:1,
+        bookId:null,
       }
     },
     mounted() {
-      // var params = new URLSearchParams(window.location.search);
-      // this.bookId = parseInt(params.get('id'));
+      var params = new URLSearchParams(window.location.search);
+      this.bookId = parseInt(params.get('id'));
 
       fetch(`http://localhost:3000/books`) 
         .then(response => response.json())
