@@ -22,7 +22,7 @@
     </div>
     <div class="main">
       <div v-for="(goal) in goals" class="goal">
-      <div class="goalName">目的：{{goal.goalName}}</div>    
+      <div class="goalName">目的：{{goal.goalame}}</div>    
       <table class="booksTable">
           <tr class="tableHeader">
             <th>タイトル</th>
@@ -31,7 +31,6 @@
             <th>職種</th>
             <th>評価☆</th>
             <th>コメント</th>
-            <th v-if="employeeId === 1">削除</th>
           </tr>
           <tr v-for="(record) in goal.recordList" class="tableMain" v-on:click="handleRowClick(record.id)">
             <td class="booktd">{{ getBook(record.record_id) }}</td>
