@@ -28,7 +28,7 @@
       "goals": [
         {
           "id": 1,
-          "goal_name": "デザインエンジニアとしてスキルアップ",
+          "goal_name": "デザインエンジニアへのキャリアチェンジ",
           "recordList": [
             {
               "id": 1,
@@ -42,7 +42,7 @@
         },
         {
           "id": 2,
-          "goal_name": "システムエンジニアへのキャリアチェンジ",
+          "goal_name": "デザイナーとしてスキルアップ",
           "recordList": [
             {
               "id": 1,
@@ -57,18 +57,18 @@
       "user_name": "山田花子",
       "department": "産業ソリューション事業本部",
       "year": 8,
-      "job": "営業",
+      "job": "エンジニア",
       "goals": [
         {
           "id": 1,
-          "goal_name": "エンジニアへのキャリアチェンジ",
+          "goal_name": "エンジニアとしてスキルアップ",
           "recordList": [
             {
               "id": 1,
               "record_id": 5
             },
             {
-              "id": 1,
+              "id": 2,
               "record_id": 6
             }
           ]
@@ -85,7 +85,16 @@
         {
           "id": 1,
           "goal_name": "スクラムマスターへのキャリアアップ",
-          "recordList": []
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 6
+            },
+            {
+              "id": 2,
+              "record_id": 7
+            }
+          ]
         }
       ]
     },
@@ -99,12 +108,30 @@
         {
           "id": 1,
           "goal_name": "アプリエンジニアとしてのキャリアアップ",
-          "recordList": []
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 9
+            },
+            {
+              "id": 2,
+              "record_id": 10
+            }
+          ]
         },
         {
           "id": 2,
           "goal_name": "営業担当者の理解",
-          "recordList": []
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 11
+            },
+            {
+              "id": 2,
+              "record_id": 12
+            }
+          ]
         }
       ]
     },
@@ -118,12 +145,30 @@
         {
           "id": 1,
           "goal_name": "アプリエンジニアとしてのキャリアアップ",
-          "recordList": []
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 13
+            },
+            {
+              "id": 2,
+              "record_id": 14
+            }
+          ]
         },
         {
           "id": 2,
           "goal_name": "営業へのキャリアチェンジ",
-          "recordList": []
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 15
+            },
+            {
+              "id": 2,
+              "record_id": 16
+            }
+          ]
         }
       ]
     },
@@ -137,12 +182,30 @@
         {
           "id": 1,
           "goal_name": "デザイナーとしてのキャリアアップ",
-          "recordList": []
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 17
+            },
+            {
+              "id": 2,
+              "record_id": 18
+            }
+          ]
         },
         {
           "id": 2,
           "goal_name": "営業職の理解",
-          "recordList": []
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 19
+            },
+            {
+              "id": 2,
+              "record_id": 20
+            }
+          ]
         }
       ]
     },
@@ -156,7 +219,74 @@
         {
           "id": 1,
           "goal_name": "エンジニアとしてのスキルアップ",
-          "recordList": []
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 21
+            },
+            {
+              "id": 2,
+              "record_id": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "user_name": "村上博人",
+      "department": "システム研究開発センター",
+      "year": 5,
+      "job": "デザイナー",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "デザイナーとしてのスキルアップ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 23
+            },
+            {
+              "id": 2,
+              "record_id": 24
+            },
+            {
+              "id": 3,
+              "record_id": 25
+            },
+            {
+              "id": 3,
+              "record_id": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "user_name": "西村理子",
+      "department": "テレコムソリューション事業部",
+      "year": 3,
+      "job": "営業",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "営業スキルの習得",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 27
+            },
+            {
+              "id": 2,
+              "record_id": 28
+            },
+            {
+              "id": 3,
+              "record_id": 29
+            }
+          ]
         }
       ]
     }
@@ -170,7 +300,7 @@
       "publisher": "オライリージャパン",
       "place": "みなとみらい",
       "url": "https://example.com",
-      "status": "貸出可能",
+      "status": "貸出不可",
       "image": "image1.jpg",
       "date": "2018/06/01",
       "chapterList": [
@@ -191,12 +321,12 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 4,
               "explanation": "具体的な名前を用いて、情報を詰め込む。汎用的・曖昧な命名を避ける。"
             },
             {
               "id": 2,
-              "emp_id": 2,
+              "emp_id": 3,
               "explanation": "スコープの大きな変数には長い名前を付ける。"
             }
           ]
@@ -211,7 +341,7 @@
       "publisher": "NTT出版",
       "place": "虎ノ門",
       "url": "https://example.com",
-      "status": "貸出不可",
+      "status": "貸出可能",
       "image": "image2.jpg",
       "date": "2020/11/21",
       "chapterList": [
@@ -221,7 +351,7 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 2,
               "explanation": "このセクションではサービスデザインの基本的な概念や枠組みについて詳しく解説します。サービスデザインがなぜ重要であるか、その核心に迫ります。"
             },
             {
@@ -237,7 +367,7 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 2,
               "explanation": "サービスデザインを実践する上で役立つツールやフレームワークについて学びます。ツールの使い方や効果的な活用方法を身につけましょう。"
             },
             {
@@ -267,7 +397,7 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 2,
               "explanation": "このセクションでは心理学の基本的な原則をデザインに応用する方法について解説します。ユーザーの行動や反応を理解し、デザインに反映させるポイントを学びましょう。"
             },
             {
@@ -283,7 +413,7 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 2,
               "explanation": "心理学の概念であるオペラント条件付けを理解し、デザインに応用する方法に焦点を当てます。ユーザーの行動を促進するデザイン手法について学びましょう。"
             },
             {
@@ -313,12 +443,12 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 4,
               "explanation": "プロジェクト管理の基本原則や手法について学ぶこの章では、成功するプロジェクトを構築するための基盤を築きます。"
             },
             {
               "id": 2,
-              "emp_id": 2,
+              "emp_id": 8,
               "explanation": "プロジェクトの進捗を適切に管理し、予算やスケジュールの調整を行うための手法に焦点を当てます。"
             }
           ]
@@ -329,12 +459,12 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 4,
               "explanation": "チームの構築やメンバーのモチベーション管理など、人的要因がプロジェクトの成否に与える影響について解説します。"
             },
             {
               "id": 2,
-              "emp_id": 2,
+              "emp_id": 8,
               "explanation": "チームの相互作用やリーダーシップの重要性を理解し、人的要因に適した対策を講じる方法に焦点を当てます。"
             }
           ]
@@ -359,12 +489,12 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 5,
               "explanation": "この章ではHTMLの基本構造や要素について詳しく解説します。HTML文書の作成から始め、基本的なタグの使用法を学びましょう。"
             },
             {
               "id": 2,
-              "emp_id": 2,
+              "emp_id": 6,
               "explanation": "HTML文書内でのテキストの書き方や段落の作成など、基本的なHTMLタグの使用方法に焦点を当てます。"
             }
           ]
@@ -375,12 +505,12 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 7,
               "explanation": "このセクションではCSSを使用してWebページをスタイリッシュにデザインする方法に焦点を当てます。基本的なCSSプロパティやセレクタの使い方を学びましょう。"
             },
             {
               "id": 2,
-              "emp_id": 2,
+              "emp_id": 6,
               "explanation": "CSSのボックスモデルやレイアウトの基本的な原則について解説し、Webデザインの基礎を築きます。"
             }
           ]
@@ -405,12 +535,12 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 5,
               "explanation": "この章ではデザインの失敗例や注意すべきポイントについて紹介します。避けるべきデザインのパターンやトラブル回避のためのヒントを学びましょう。"
             },
             {
               "id": 2,
-              "emp_id": 2,
+              "emp_id": 6,
               "explanation": "デザインの誤解やユーザー体験の悪化を招く可能性のあるケーススタディを通じて、成功しないデザインの特徴を理解します。"
             }
           ]
@@ -435,7 +565,7 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 5,
               "explanation": "デザインの仕事の中で重要なデザインプロセスについて詳しく解説します。プロジェクトの立ち上げから納品までの各段階でのデザイナーの役割や活動に焦点を当てましょう。"
             },
             {
@@ -481,12 +611,12 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 6,
               "explanation": "AIが進化する中で、営業マンが成功するための戦略やアプローチについて解説します。新しいテクノロジーを活かし、営業活動を効果的に進める方法に焦点を当てましょう。"
             },
             {
               "id": 2,
-              "emp_id": 2,
+              "emp_id": 7,
               "explanation": "AIと連携した営業プロセスや顧客対応の最新のベストプラクティスについて学び、競争激化する営業環境において生き残るためのヒントを得ることができます。"
             }
           ]
@@ -497,12 +627,12 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 5,
               "explanation": "デジタルツールの活用により、営業活動を効率的に進めるための方法に焦点を当てます。クラウドサービスや営業支援ツールなどの活用法を具体的に解説します。"
             },
             {
               "id": 2,
-              "emp_id": 2,
+              "emp_id": 6,
               "explanation": "デジタルツールの導入により、情報の迅速な共有や分析が可能となり、顧客とのコミュニケーションの向上に寄与します。"
             }
           ]
@@ -527,12 +657,12 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 7,
               "explanation": "この章では営業における基本的な原則や成功のための鉄則について紹介します。営業のプロフェッショナルが実践している100のルールを学びましょう。"
             },
             {
               "id": 2,
-              "emp_id": 2,
+              "emp_id": 5,
               "explanation": "営業の鬼たちが実践してきた経験則やノウハウに基づき、営業活動を成功に導くための100の則を理解し、日常の営業に活かしましょう。"
             }
           ]
@@ -557,12 +687,12 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 8,
               "explanation": "コンサルタントの基本的な仕事の手法やアプローチについて解説します。技術アドバイスの人間学に焦点を当て、クライアントへの価値提供のためのスキルを磨きましょう。"
             },
             {
               "id": 2,
-              "emp_id": 2,
+              "emp_id": 8,
               "explanation": "コンサルタントとしての専門的な知識やコミュニケーションスキル、問題解決のフレームワークなどを理解し、クライアントの課題に対して有益なアドバイスを提供できるようになります。"
             }
           ]
@@ -573,12 +703,12 @@
           "chap_explanations": [
             {
               "id": 1,
-              "emp_id": 1,
+              "emp_id": 8,
               "explanation": "技術アドバイスの人間学に焦点を当て、クライアントとの信頼関係の構築やプロジェクトの進行管理などについて理解します。"
             },
             {
               "id": 2,
-              "emp_id": 2,
+              "emp_id": 8,
               "explanation": "技術的なアドバイスを提供する上でのベストプラクティスや成功事例を学び、コンサルタントとしてのスキルを高めましょう。"
             }
           ]
@@ -624,12 +754,287 @@
       "id": 4,
       "emp_id": 2,
       "book_id": 2,
-      "readStatus": "進行中",
+      "readStatus": "完了",
       "readYear": 4,
       "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": null,
+      "comment": "サービスデザインの考え方について0から学べる良書でした。"
+    },
+    {
+      "id": 5,
+      "emp_id": 3,
+      "book_id": 4,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "営業",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "プロジェクト管理について理解を深められた。"
+    },
+    {
+      "id": 6,
+      "emp_id": 3,
+      "book_id": 1,
+      "readStatus": "完了",
+      "readYear": 7,
+      "readJob": "",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "命名規則を初めて学ぶこができた。"
+    },
+    {
+      "id": 7,
+      "emp_id": 4,
+      "book_id": 1,
+      "readStatus": "完了",
+      "readYear": 4,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "早期リターンを初めて知った。"
+    },
+    {
+      "id": 8,
+      "emp_id": 4,
+      "book_id": 4,
+      "readStatus": "完了",
+      "readYear": 6,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "人月という単位について理解を深められた。"
+    },
+    {
+      "id": 9,
+      "emp_id": 5,
+      "book_id": 5,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "アプリ開発について学ぶことができた。"
+    },
+    {
+      "id": 10,
+      "emp_id": 5,
+      "book_id": 6,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "NGを学ぶことで正解に近づける。"
+    },
+    {
+      "id": 11,
+      "emp_id": 2,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "負の要素がないので、読んでいて気持ちがいい"
+    },
+    {
+      "id": 12,
+      "emp_id": 2,
+      "book_id": 9,
+      "readStatus": "進行中",
+      "readYear": 5,
+      "readJob": "エンジニア",
       "color": "#afeeee",
-      "star": 0,
-      "comment": "システムエンジニアへのキャリアチェンジに向けて学習中。"
+      "star": null,
+      "comment": ""
+    },
+    {
+      "id": 13,
+      "emp_id": 6,
+      "book_id": 5,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "アプリ開発について学ぶことができた。HTMLとCSSの基本から応用まで、非常に分かりやすい解説だった。"
+    },
+    {
+      "id": 14,
+      "emp_id": 6,
+      "book_id": 6,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "NGを学ぶことで正解に近づける。デザインの基本について再確認できる良書。"
+    },
+    {
+      "id": 15,
+      "emp_id": 6,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "AIの進化と共に変わる営業の在り方について理解できる。未来の営業に向けた示唆に富んだ一冊。"
+    },
+    {
+      "id": 16,
+      "emp_id": 6,
+      "book_id": 9,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "営業の基本から応用まで、豊富な実例を交えて解説されており、実践的な視点が得られる。"
+    },
+    {
+      "id": 17,
+      "emp_id": 7,
+      "book_id": 6,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "Webデザインの奥深さを知り、アプリ開発においてユーザビリティ向上の手法を習得しました。"
+    },
+    {
+      "id": 18,
+      "emp_id": 7,
+      "book_id": 7,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "デザインの不可解な要素に気づき、良いデザインの要素を把握しました。"
+    },
+    {
+      "id": 19,
+      "emp_id": 7,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 4,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": 4,
+      "comment": "AI時代における営業活動の新たな可能性に驚き、クリエイティブな視点で営業にアプローチすることを学びました。"
+    },
+    {
+      "id": 20,
+      "emp_id": 7,
+      "book_id": 9,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": 4,
+      "comment": "営業の心理を理解し、クライアントとのコミュニケーションスキル向上に役立ちました。"
+    },
+    {
+      "id": 21,
+      "emp_id": 8,
+      "book_id": 4,
+      "readStatus": "完了",
+      "readYear": 7,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "人月という単位についての洞察を深め、プロジェクト管理においての新たな視点を得ました。"
+    },
+    {
+      "id": 22,
+      "emp_id": 8,
+      "book_id": 10,
+      "readStatus": "完了",
+      "readYear": 8,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "コンサルタントとしてのスキル向上に寄与し、技術アドバイスの人間学に関する知識が深まりました。"
+    },
+    {
+      "id": 23,
+      "emp_id": 9,
+      "book_id": 6,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "デザインにおける優れた手法やテクニックを学び、実践に役立てました。"
+    },
+    {
+      "id": 24,
+      "emp_id": 9,
+      "book_id": 5,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "Webデザインの要素や原則を理解し、クリエイティブなデザインに挑戦しました。"
+    },
+    {
+      "id": 25,
+      "emp_id": 9,
+      "book_id": 7,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "ユーザビリティの向上につながるデザイン手法やプロセスを実践しました。"
+    },
+    {
+      "id": 26,
+      "emp_id": 9,
+      "book_id": 3,
+      "readStatus": "進行中",
+      "readYear": 4,
+      "readJob": "デザイナー",
+      "color": "#afeeee",
+      "star": null,
+      "comment": ""
+    },
+    {
+      "id": 27,
+      "emp_id": 10,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 1,
+      "readJob": "営業",
+      "color": "#ffc0cb",
+      "star": 4,
+      "comment": "新たな営業手法や成功事例について学びながら、実践に取り入れられた。"
+    },
+    {
+      "id": 28,
+      "emp_id": 10,
+      "book_id": 9,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "営業",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "営業戦略の新しい視点を得ることができ、実践に役立てることができました。"
+    },
+    {
+      "id": 29,
+      "emp_id": 10,
+      "book_id": 10,
+      "readStatus": "進行中",
+      "readYear": 3,
+      "readJob": "営業",
+      "color": "#afeeee",
+      "star": null,
+      "comment": ""
     }
   ]
 }
