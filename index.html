@@ -31,7 +31,7 @@
             <th>職種</th>
             <th>評価☆</th>
             <th>コメント</th>
-            <th v-if="employeeId === 1">削除</th>
+            <!-- <th v-if="employeeId === 1">削除</th> -->
           </tr>
           <tr v-for="(record) in goal.recordList" class="tableMain" v-on:click="handleRowClick(record.record_id)">
             <td class="booktd">{{ getBook(record.record_id) }}</td>
@@ -40,8 +40,8 @@
             <td>{{ getJob(record.record_id) }}</td>
             <td>☆ {{ getStar(record.record_id) }}</td>
             <td class="booktd">{{ getComment(record.record_id) }}</td>
-            <td v-if="getStatus(record.record_id) == '予定' && employeeId === 1" v-on:click="handleDeleteClick(record.id,$event)" class="delete"> × </td>
-            <td v-else-if="employeeId === 1" class="hyphen"> - </td>
+            <!-- <td v-if="getStatus(record.record_id) == '予定' && employeeId === 1" v-on:click="handleDeleteClick(record.id,$event)" class="delete"> × </td>
+            <td v-else-if="employeeId === 1" class="hyphen"> - </td> -->
         </tr>    
       </table>
       </div>

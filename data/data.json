@@ -170,7 +170,7 @@
       "publisher": "オライリージャパン",
       "place": "みなとみらい",
       "url": "https://example.com",
-      "status": "貸出不可",
+      "status": "貸出可能",
       "image": "image1.jpg",
       "date": "2018/06/01",
       "chapterList": [
@@ -211,7 +211,7 @@
       "publisher": "NTT出版",
       "place": "虎ノ門",
       "url": "https://example.com",
-      "status": "貸出可能",
+      "status": "貸出不可",
       "image": "image2.jpg",
       "date": "2020/11/21",
       "chapterList": [
