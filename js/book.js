@@ -2,30 +2,29 @@ const book = Vue.createApp({
     data() {
       return {
         book: null,
-        comments: [],
-        explanations: [],
-        bookId:null,
-        employeeId:null,
+        records: [],
+        employees: [],
+        bookId:1,
         canRegister: true,
         canRent: true,
         canReturn: false,
         registerButtonText: '＋リストに追加',
         rentButtonText: '貸出',
-        returnButtonText: '返却'
+        returnButtonText: '返却',
       };
+
+      
     },
     mounted() {
-      var params = new URLSearchParams(window.location.search);
-      this.bookId = parseInt(params.get('id'));
+      // var params = new URLSearchParams(window.location.search);
+      // this.bookId = parseInt(params.get('id'));
 
-      fetch(`http://localhost:3000/book`) 
+      fetch(`http://localhost:3000/books`) 
         .then(response => response.json())
         .then(data => {
           const matchingBook = data.find(book => book.id === this.bookId);
           if (matchingBook) {
             this.book = matchingBook;
-            this.comments = matchingBook.comments;
-            this.explanations = matchingBook.explanations
           } else {
             console.error('Book not found.');
           }
@@ -34,13 +33,41 @@ const book = Vue.createApp({
           console.error('Error fetching data:', error);
         });
 
+        fetch(`http://localhost:3000/records`) 
+        .then(response => response.json())
+        .then(data => {
+          const matchingRecords = data.filter(records => records.book_id === this.bookId);
+          if (matchingRecords.length > 0) {
+            this.records = matchingRecords;
+          } else {
+            console.error('Record not found.');
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+        });
+
+        fetch(`http://localhost:3000/employees`) 
+        .then(response => response.json())
+        .then(data => {
+          this.employees = data;
+          // const matchingEmployees = data.filter(employees => records.book_id === this.bookId);
+          // if (matchingEmployees.length > 0) {
+          //   this.employees = matchingEmployees;
+          // } else {
+          //   console.error('Employee not found.');
+          // }
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+        });
         
       },
       
 
     methods: {
         returnTop(id){
-            window.location.href="http://127.0.0.1:3000/index.html"
+          window.location.href = "http://127.0.0.1:3000/index.html"
         },
         handleRowClickEmp(employeeId){
           window.location.href = 'http://127.0.0.1:3000/index.html?id=' + employeeId;
@@ -51,7 +78,6 @@ const book = Vue.createApp({
         goBack() {
           window.history.back();
         },  
-
         toggleRegistration() {
           if (this.canRegister) {
             this.registerList();
