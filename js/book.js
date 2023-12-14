@@ -46,6 +46,7 @@ const book = Vue.createApp({
             this.records = matchingRecords;
             if (matchingRecords[0].emp_id === 1) {
               this.canReturn = true;
+              this.canRent = false;
             } else {
               this.canReturnt = false;
             }
