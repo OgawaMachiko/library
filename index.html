@@ -22,7 +22,7 @@
     </div>
     <div class="main">
       <div v-for="(goal) in goals" class="goal">
-      <div class="goalName">目的：{{goal.goal_name}}</div>    
+      <div class="goalName">目的：{{goal.goalame}}</div>    
       <table class="booksTable">
           <tr class="tableHeader">
             <th>タイトル</th>
@@ -31,18 +31,15 @@
             <th>職種</th>
             <th>評価☆</th>
             <th>コメント</th>
-            <th v-if="employeeId === 1">削除</th>
           </tr>
-          <tr v-for="(record) in goal.recordList" class="tableMain" v-on:click="handleRowClick(record.id)">
-            <td class="booktd">{{ getBook(record.record_id) }}</td>
-            <td><div class="bookStatus" :style="{backgroundColor:getColor(record.record_id)}">{{ getStatus(record.record_id) }}</div></td>
-            <td>{{ getYear(record.record_id) }} 年目</td>
-            <td>{{ getJob(record.record_id) }}</td>
-            <td>☆ {{ getStar(record.record_id) }}</td>
-            <td class="booktd">{{ getComment(record.record_id) }}</td>
-            <td v-if="getStatus(record.record_id) == '予定' && employeeId === 1" v-on:click="handleDeleteClick(1, $event)" class="delete"> × </td>
-            <td v-else-if="employeeId === 1" class="hyphen"> - </td>
-        </tr>    
+          <tr v-for="(record) in goal.recordList" class="tableMain" v-on:click="handleRowClick(record.record_id)">
+              <td class="booktd">{{ getBook(record.record_id) }}</td>
+              <td><div class="bookStatus" :style="{backgroundColor:getColor(record.record_id)}">{{ getStatus(record.record_id) }}</div></td>
+              <td>{{ getYear(record.record_id) }} 年目</td>
+              <td>{{ getJob(record.record_id) }}</td>
+              <td>☆ {{ getStar(record.record_id) }}</td>
+              <td class="booktd">{{ getComment(record.record_id) }}</td>
+          </tr>    
       </table>
       </div>
     </div>
