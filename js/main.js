@@ -14,11 +14,10 @@ const app = Vue.createApp({
     console.log(this.employeeId)
 
 
-    fetch(`http://localhost:3000/employees/1`)
+    fetch(`http://localhost:3000/employees/`)
       .then(response => response.json())
       .then(data => {
-        // const targetEmp = data.find(emp => emp.id === this.employeeId)
-        const targetEmp = data;
+        const targetEmp = data.find(emp => emp.id === this.employeeId)
         if (targetEmp) {
           this.employee = targetEmp;
           this.goals = targetEmp.goals
