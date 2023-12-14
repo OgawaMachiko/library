@@ -50,17 +50,14 @@ body {
 
 .registerDone {
     background-color: #ff6fc3; 
-
     opacity: 0.6; 
     color: #000000;
+    pointer-events: none; 
+    cursor: not-allowed; 
 }
 
 .registerDone:hover{
-    background-color: #ff6fc3a9;
-    cursor: pointer;
-}
-.registerDone:active {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+    background-color: #ff6fc3;
 }
 
 .rentalBook{
