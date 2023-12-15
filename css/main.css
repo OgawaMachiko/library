@@ -1,0 +1,125 @@
+.app{
+    padding: 48px;
+}
+
+body {
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+  }
+
+.return{
+    border-radius: 8px;
+    font-size: 12px;
+    border: solid 2px #aaaaaa;
+    background-color: white;
+    padding: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.return:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+.return:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+}
+
+
+.menuTab{
+    width:130px;
+    float: right;
+    border-radius: 8px;
+    font-size: 12px;
+    border: solid 2px #aaaaaa;
+    background-color: white;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 2px;
+}
+.menuTab:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+.menuTab:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+}
+
+.header{
+    border-bottom: solid 2px;
+    border-color: #aaaaaa;
+    margin-bottom: 10px;
+    width: 1272px;
+}
+
+.empName{
+    font-size: 40px;
+}
+
+.empDetail{
+    font-size: 20px;
+}
+
+.goal{
+    margin-bottom: 40px;
+}
+
+.goalName{
+    margin-bottom: 0;
+}
+
+.booksTable{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 1272px;
+}
+
+.bookStatus{
+    border-radius: 4px;
+    width: 64px;
+}
+
+th{
+    border: solid #aaaaaa 1px;
+    padding: 8px;
+}
+
+td{
+    border: solid #aaaaaa 1px;
+    padding: 4px;
+    padding-left: 8px;
+}
+
+.tableMain:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.tableMain{
+    text-align: center;
+    align-items: center;
+}
+
+.booktd{
+    text-align: left;
+}
+
+.delete{
+    text-align: center;
+    font-size: 100%;
+    color: silver;
+}
+
+.delete:hover{
+    text-align: center;
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
+}
+
+.hyphen{
+    text-align: center;
+    font-size: 100%;
+    color: silver;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Display Book Data Details in Table Using Vue.js CDN</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.20/dist/vue.global.prod.js"></script>
+  <link rel="stylesheet" href="css/book.css"></link>
+</head>
+<body>
+  <div id="book" class="app">
+    <button @click="goBack()" class="return">戻る</button>
+      <button v-on:click="handleRowClickEmp(1)" class="menuTab">マイページ</button>
+      <button v-on:click="handleRowClickAllEmp(0)" class="menuTab">社員検索ページ</button>
+      <div class="bookHeader">
+        <div  class="bookTitle"><h2> {{ book.title }}</h2>
+        <div class="ListButtons">
+        <div>
+           <!-- <button @click="toggleRegistration()"
+          class="toMyListButton" :class="{ 'registerDone': !canRegister }">
+
+           <button @click="canRegister ? registerList() : deleteRecord()"
+          class="toMyListButton" :class="{ 'registerDone': !canRegister }"> 
+            {{ registerButtonText }}
+          </button> -->
+        </div>
+
+        <div class="requestButtons">
+          <div>
+            <button @click="rentalBook()" :disabled="!canRent" 
+            class="rentalBook" :class="{ 'disabledButton': !canRent }">
+              {{ rentButtonText }}
+            </button>
+          </div>
+          <div>
+              <button @click="returnBook()" :disabled="!canReturn"
+              class="returnBook" :class="{ 'disabledButton': !canReturn }">
+                {{ returnButtonText }}
+              </button>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div>
+
+    <div class="bookDataDetail">
+      <div>
+        <img v-bind:src="'images/' + book.image" alt="bookImage" class="img">
+      </div>
+      <div class="detailHead">
+        <p>著者</p>
+        <p>ジャンル</p>
+        <p>出版社</p>
+        <p>発売日</p>
+        <p>場所</p>
+        <p>URL</p>
+        <p>ステータス</p>
+      </div>
+      <div class="colon">
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+        <p>:</p>
+      </div>
+      <div class="detail">
+        <p>{{ book.author }}</p>
+        <p>{{ book.genre }}</p>
+        <p>{{ book.publisher }}</p>
+        <p>{{ book.date }}</p>
+        <p>{{ book.place }}</p>
+        <p>{{ book.url }}</p>
+        <p>{{ book.status }}</p>
+      </div>
+    </div>
+    <div class="review">■レビュー</div>
+    <div  v-for="(record, index) in records" :key="index"  class="comments">
+      <table>
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr>
+            <td v-on:click="handleRowClickEmp(record.id)" class="user_name"> 名前: {{ getUserName(record.emp_id) }}</td>
+            <td class="star"> 評価：☆{{ record.star }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="comment">{{ record.comment }}</p>
+    </div>
+    <div class="explanation">■解説</div>
+    <div v-for="(chapter, index) in book.chapterList" :key="index" class="chpater">
+      <p class="chapter_name">{{ chapter.chap_id }}章：{{chapter.chap_name}}</p>
+      <div v-for="(explanation, index1) in chapter.chap_explanations" :key="index1" 
+         class="comments">
+      <table>
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr>
+            <td v-on:click="handleRowClickEmp(explanation.id)" class="user_name">名前：{{ getUserName(explanation.emp_id) }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="comment">{{ explanation.explanation }}</p>
+    </div>
+    <!-- <div  v-for="(chapter, index) in explanations" :key="index" class="chapter">
+      <p class="chapter_name">{{ chapter.chap_id }}章：{{chapter.chap_name}}</p>
+      <div v-for="(explanation, index1) in explanations[index].chap_explanations" :key="index1" 
+         class="comments">
+      <table>
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr>
+            <td v-on:click="handleRowClickEmp(explanation.id)" class="user_name">名前：{{explanation.user_name}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="comment">{{ explanation.explanation }}</p>
+    </div> 
+    </div> -->
+
+  </div>
+
+  <script src ="js/book.js"></script>
+</body>
+</html>

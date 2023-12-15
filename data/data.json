@@ -1,0 +1,1040 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "user_name": "石倉加菜子",
+      "department": "テレコムソリューション事業部",
+      "year": 1,
+      "job": "エンジニア",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "デザインエンジニアへのキャリアチェンジ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "user_name": "田中太郎",
+      "department": "金融ソリューション事業部",
+      "year": 4,
+      "job": "デザイナー",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "デザインエンジニアへのキャリアチェンジ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 2
+            },
+            {
+              "id": 2,
+              "record_id": 3
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "goal_name": "デザイナーとしてスキルアップ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "user_name": "山田花子",
+      "department": "産業ソリューション事業本部",
+      "year": 8,
+      "job": "エンジニア",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "エンジニアとしてスキルアップ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 5
+            },
+            {
+              "id": 2,
+              "record_id": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "user_name": "中西航太",
+      "department": "テレコムソリューション事業部",
+      "year": 9,
+      "job": "エンジニア",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "スクラムマスターへのキャリアアップ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 7
+            },
+            {
+              "id": 2,
+              "record_id": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "user_name": "石川剛",
+      "department": "ITS＆E事業本部",
+      "year": 6,
+      "job": "エンジニア",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "アプリエンジニアとしてのキャリアアップ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 9
+            },
+            {
+              "id": 2,
+              "record_id": 10
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "goal_name": "営業担当者の理解",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 11
+            },
+            {
+              "id": 2,
+              "record_id": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "user_name": "有田由紀",
+      "department": "流通・サービスソリューション事業本部",
+      "year": 8,
+      "job": "営業",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "アプリエンジニアとしてのキャリアアップ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 13
+            },
+            {
+              "id": 2,
+              "record_id": 14
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "goal_name": "営業へのキャリアチェンジ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 15
+            },
+            {
+              "id": 2,
+              "record_id": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "user_name": "花田京子",
+      "department": "流通・サービスソリューション事業本部",
+      "year": 5,
+      "job": "デザイナー",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "デザイナーへのキャリアチェンジ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 17
+            },
+            {
+              "id": 2,
+              "record_id": 18
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "goal_name": "営業職の理解",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 19
+            },
+            {
+              "id": 2,
+              "record_id": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "user_name": "高橋大樹",
+      "department": "デジタル製造業センター",
+      "year": 9,
+      "job": "エンジニア",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "エンジニアとしてのスキルアップ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 21
+            },
+            {
+              "id": 2,
+              "record_id": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "user_name": "村上博人",
+      "department": "システム研究開発センター",
+      "year": 5,
+      "job": "デザイナー",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "デザイナーとしてのスキルアップ",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 23
+            },
+            {
+              "id": 2,
+              "record_id": 24
+            },
+            {
+              "id": 3,
+              "record_id": 25
+            },
+            {
+              "id": 3,
+              "record_id": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "user_name": "西村理子",
+      "department": "テレコムソリューション事業部",
+      "year": 3,
+      "job": "営業",
+      "goals": [
+        {
+          "id": 1,
+          "goal_name": "営業スキルの習得",
+          "recordList": [
+            {
+              "id": 1,
+              "record_id": 27
+            },
+            {
+              "id": 2,
+              "record_id": 28
+            },
+            {
+              "id": 3,
+              "record_id": 29
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "リーダーブルコード",
+      "author": " Dustin Boswell, Trevor Foucher",
+      "genre": "技術書",
+      "publisher": "オライリージャパン",
+      "place": "みなとみらい",
+      "url": "https://example.com",
+      "status": "貸出不可",
+      "image": "image1.jpg",
+      "date": "2018/06/01",
+      "chapterList": [
+        {
+          "id": 1,
+          "chap_name": "理解しやすいコード",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 2,
+              "explanation": "「優れた」コードとは読みやすいコードである。"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "chap_name": "名前に情報を詰め込む",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 4,
+              "explanation": "具体的な名前を用いて、情報を詰め込む。汎用的・曖昧な命名を避ける。"
+            },
+            {
+              "id": 2,
+              "emp_id": 3,
+              "explanation": "スコープの大きな変数には長い名前を付ける。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "サービスデザイン思考",
+      "author": " 井登友一",
+      "genre": "技術書",
+      "publisher": "NTT出版",
+      "place": "虎ノ門",
+      "url": "https://example.com",
+      "status": "貸出可能",
+      "image": "image2.jpg",
+      "date": "2020/11/21",
+      "chapterList": [
+        {
+          "id": 1,
+          "chap_name": "サービスデザイン基礎",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 2,
+              "explanation": "このセクションではサービスデザインの基本的な概念や枠組みについて詳しく解説します。サービスデザインがなぜ重要であるか、その核心に迫ります。"
+            },
+            {
+              "id": 2,
+              "emp_id": 2,
+              "explanation": "ユーザーエクスペリエンス（UX）の向上は、サービスデザインの中でも特に注力すべきポイントです。この章では具体的なユーザーエクスペリエンスの向上策や実践的なアプローチに焦点を当てます。"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "chap_name": "サービスデザイン実践",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 2,
+              "explanation": "サービスデザインを実践する上で役立つツールやフレームワークについて学びます。ツールの使い方や効果的な活用方法を身につけましょう。"
+            },
+            {
+              "id": 2,
+              "emp_id": 2,
+              "explanation": "この章では実践的なケーススタディを通じて、サービスデザインの理論を具体的なプロジェクトに応用する方法に焦点を当てます。成功したプロジェクトの要因や失敗から得られる教訓を共有します。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "インタフェースデザインの心理学",
+      "author": " Susan Weinschenk",
+      "genre": "技術書",
+      "publisher": "オライリージャパン",
+      "place": "新川",
+      "url": "https://example.com",
+      "status": "貸出不可",
+      "image": "image3.jpg",
+      "date": "2021/07/01",
+      "chapterList": [
+        {
+          "id": 1,
+          "chap_name": "心理学とデザイン",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 2,
+              "explanation": "このセクションでは心理学の基本的な原則をデザインに応用する方法について解説します。ユーザーの行動や反応を理解し、デザインに反映させるポイントを学びましょう。"
+            },
+            {
+              "id": 2,
+              "emp_id": 2,
+              "explanation": "ユーザビリティを向上させるためには、ユーザーの心理に着目することが不可欠です。この章では心理学的な観点からインターフェースデザインにアプローチする方法を示します。"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "chap_name": "オペラント条件付けとデザイン",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 2,
+              "explanation": "心理学の概念であるオペラント条件付けを理解し、デザインに応用する方法に焦点を当てます。ユーザーの行動を促進するデザイン手法について学びましょう。"
+            },
+            {
+              "id": 2,
+              "emp_id": 2,
+              "explanation": "デザインがユーザーに与える影響を理解するために、オペラント条件付けの原則をデザインプロセスに取り入れることが重要です。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "人月の神話",
+      "author": " Dustin Boswell, Trevor Foucher",
+      "genre": "技術書",
+      "publisher": "オライリージャパン",
+      "place": "みなとみらい",
+      "url": "https://example.com",
+      "status": "貸出可能",
+      "image": "image4.jpg",
+      "date": "2019/01/16",
+      "chapterList": [
+        {
+          "id": 1,
+          "chap_name": "プロジェクト管理の基本",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 4,
+              "explanation": "プロジェクト管理の基本原則や手法について学ぶこの章では、成功するプロジェクトを構築するための基盤を築きます。"
+            },
+            {
+              "id": 2,
+              "emp_id": 8,
+              "explanation": "プロジェクトの進捗を適切に管理し、予算やスケジュールの調整を行うための手法に焦点を当てます。"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "chap_name": "人的要因とプロジェクトの成功",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 4,
+              "explanation": "チームの構築やメンバーのモチベーション管理など、人的要因がプロジェクトの成否に与える影響について解説します。"
+            },
+            {
+              "id": 2,
+              "emp_id": 8,
+              "explanation": "チームの相互作用やリーダーシップの重要性を理解し、人的要因に適した対策を講じる方法に焦点を当てます。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "HTML＆CSSとWebデザインが 1冊できちんと身につく本",
+      "author": "服部雄樹",
+      "genre": "技術書",
+      "publisher": "インプレス刊",
+      "place": "新川",
+      "url": "https://example.com",
+      "status": "貸出可能",
+      "image": "image5.jpg",
+      "date": "2019/05/08",
+      "chapterList": [
+        {
+          "id": 1,
+          "chap_name": "HTML基礎",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 5,
+              "explanation": "この章ではHTMLの基本構造や要素について詳しく解説します。HTML文書の作成から始め、基本的なタグの使用法を学びましょう。"
+            },
+            {
+              "id": 2,
+              "emp_id": 6,
+              "explanation": "HTML文書内でのテキストの書き方や段落の作成など、基本的なHTMLタグの使用方法に焦点を当てます。"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "chap_name": "CSSスタイリング",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 7,
+              "explanation": "このセクションではCSSを使用してWebページをスタイリッシュにデザインする方法に焦点を当てます。基本的なCSSプロパティやセレクタの使い方を学びましょう。"
+            },
+            {
+              "id": 2,
+              "emp_id": 6,
+              "explanation": "CSSのボックスモデルやレイアウトの基本的な原則について解説し、Webデザインの基礎を築きます。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "やってはいけないデザイン",
+      "author": "平本久美子",
+      "genre": "技術書",
+      "publisher": "翔泳社",
+      "place": "みなとみらい",
+      "url": "https://example.com",
+      "status": "貸出不可",
+      "image": "image6.jpg",
+      "date": "2017/05/01",
+      "chapterList": [
+        {
+          "id": 1,
+          "chap_name": "デザインの失敗例",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 5,
+              "explanation": "この章ではデザインの失敗例や注意すべきポイントについて紹介します。避けるべきデザインのパターンやトラブル回避のためのヒントを学びましょう。"
+            },
+            {
+              "id": 2,
+              "emp_id": 6,
+              "explanation": "デザインの誤解やユーザー体験の悪化を招く可能性のあるケーススタディを通じて、成功しないデザインの特徴を理解します。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "デザインの仕事 vol.01 まるごと一冊 デザイン & レイアウトの見本帳",
+      "author": "平本久美子",
+      "genre": "技術書",
+      "publisher": "MdN編集部",
+      "place": "みなとみらい",
+      "url": "https://example.com",
+      "status": "貸出不可",
+      "image": "image7.jpg",
+      "date": "2012/05/01",
+      "chapterList": [
+        {
+          "id": 1,
+          "chap_name": "デザインプロセス",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 5,
+              "explanation": "デザインの仕事の中で重要なデザインプロセスについて詳しく解説します。プロジェクトの立ち上げから納品までの各段階でのデザイナーの役割や活動に焦点を当てましょう。"
+            },
+            {
+              "id": 2,
+              "emp_id": 2,
+              "explanation": "クライアントとのコミュニケーションや要件定義、プロトタイピング、フィードバックの取り入れ方など、デザインプロセスの各フェーズにおけるベストプラクティスを学びましょう。"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "chap_name": "レイアウトの基本",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 1,
+              "explanation": "この章では効果的なレイアウトの基本原則について解説します。デザインのバランスや視覚的な導線、タイポグラフィなどに焦点を当て、見やすく魅力的なデザインを実現しましょう。"
+            },
+            {
+              "id": 2,
+              "emp_id": 2,
+              "explanation": "レイアウトデザインにおいて重要な要素や配色のコツ、画像の選定方法など、デザインのプロセスにおける具体的なアプローチを学びます。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "最強の営業術～AI時代に営業マンが生き残る方法",
+      "author": "松下和誉",
+      "genre": "営業",
+      "publisher": "翔泳",
+      "place": "新川",
+      "url": "https://example.com",
+      "status": "貸出可能",
+      "image": "image8.jpg",
+      "date": "2021/03/26",
+      "chapterList": [
+        {
+          "id": 1,
+          "chap_name": "AI時代の営業戦略",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 6,
+              "explanation": "AIが進化する中で、営業マンが成功するための戦略やアプローチについて解説します。新しいテクノロジーを活かし、営業活動を効果的に進める方法に焦点を当てましょう。"
+            },
+            {
+              "id": 2,
+              "emp_id": 7,
+              "explanation": "AIと連携した営業プロセスや顧客対応の最新のベストプラクティスについて学び、競争激化する営業環境において生き残るためのヒントを得ることができます。"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "chap_name": "デジタルツールの活用",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 5,
+              "explanation": "デジタルツールの活用により、営業活動を効率的に進めるための方法に焦点を当てます。クラウドサービスや営業支援ツールなどの活用法を具体的に解説します。"
+            },
+            {
+              "id": 2,
+              "emp_id": 6,
+              "explanation": "デジタルツールの導入により、情報の迅速な共有や分析が可能となり、顧客とのコミュニケーションの向上に寄与します。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "営業の鬼100則",
+      "author": "早川勝",
+      "genre": "営業",
+      "publisher": "昭栄社",
+      "place": "虎ノ門",
+      "url": "https://example.com",
+      "status": "貸出不可",
+      "image": "image9.jpg",
+      "date": "2012/05/01",
+      "chapterList": [
+        {
+          "id": 1,
+          "chap_name": "営業の基本原則",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 7,
+              "explanation": "この章では営業における基本的な原則や成功のための鉄則について紹介します。営業のプロフェッショナルが実践している100のルールを学びましょう。"
+            },
+            {
+              "id": 2,
+              "emp_id": 5,
+              "explanation": "営業の鬼たちが実践してきた経験則やノウハウに基づき、営業活動を成功に導くための100の則を理解し、日常の営業に活かしましょう。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "コンサルタントの秘密: 技術アドバイスの人間学",
+      "author": "G.M.ワインバーグ",
+      "genre": "技術書",
+      "publisher": "共立出版",
+      "place": "虎ノ門",
+      "url": "https://example.com",
+      "status": "貸出不可",
+      "image": "image10.jpg",
+      "date": "1991/1/1",
+      "chapterList": [
+        {
+          "id": 1,
+          "chap_name": "コンサルティングの基本",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 8,
+              "explanation": "コンサルタントの基本的な仕事の手法やアプローチについて解説します。技術アドバイスの人間学に焦点を当て、クライアントへの価値提供のためのスキルを磨きましょう。"
+            },
+            {
+              "id": 2,
+              "emp_id": 8,
+              "explanation": "コンサルタントとしての専門的な知識やコミュニケーションスキル、問題解決のフレームワークなどを理解し、クライアントの課題に対して有益なアドバイスを提供できるようになります。"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "chap_name": "技術アドバイスの人間学",
+          "chap_explanations": [
+            {
+              "id": 1,
+              "emp_id": 8,
+              "explanation": "技術アドバイスの人間学に焦点を当て、クライアントとの信頼関係の構築やプロジェクトの進行管理などについて理解します。"
+            },
+            {
+              "id": 2,
+              "emp_id": 8,
+              "explanation": "技術的なアドバイスを提供する上でのベストプラクティスや成功事例を学び、コンサルタントとしてのスキルを高めましょう。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": 1,
+      "emp_id": 1,
+      "book_id": 1,
+      "readStatus": "完了",
+      "readYear": 1,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "早期リターンについて学習できた。"
+    },
+    {
+      "id": 2,
+      "emp_id": 2,
+      "book_id": 1,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 4,
+      "comment": "コードを書く際に役立つ知識を得られた。"
+    },
+    {
+      "id": 3,
+      "emp_id": 2,
+      "book_id": 3,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "デザインの基礎から実践まで幅広く学べる素晴らしい本でした。"
+    },
+    {
+      "id": 4,
+      "emp_id": 2,
+      "book_id": 2,
+      "readStatus": "完了",
+      "readYear": 4,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": null,
+      "comment": "サービスデザインの考え方について0から学べる良書でした。"
+    },
+    {
+      "id": 5,
+      "emp_id": 3,
+      "book_id": 4,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "プロジェクト管理について理解を深められた。"
+    },
+    {
+      "id": 6,
+      "emp_id": 3,
+      "book_id": 1,
+      "readStatus": "完了",
+      "readYear": 7,
+      "readJob": "",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "命名規則を初めて学ぶこができた。"
+    },
+    {
+      "id": 7,
+      "emp_id": 4,
+      "book_id": 1,
+      "readStatus": "完了",
+      "readYear": 4,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "早期リターンを初めて知った。"
+    },
+    {
+      "id": 8,
+      "emp_id": 4,
+      "book_id": 4,
+      "readStatus": "完了",
+      "readYear": 6,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "人月という単位について理解を深められた。"
+    },
+    {
+      "id": 9,
+      "emp_id": 5,
+      "book_id": 5,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "アプリ開発について学ぶことができた。"
+    },
+    {
+      "id": 10,
+      "emp_id": 5,
+      "book_id": 6,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "NGを学ぶことで正解に近づける。"
+    },
+    {
+      "id": 11,
+      "emp_id": 2,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "負の要素がないので、読んでいて気持ちがいい"
+    },
+    {
+      "id": 12,
+      "emp_id": 2,
+      "book_id": 9,
+      "readStatus": "進行中",
+      "readYear": 6,
+      "readJob": "エンジニア",
+      "color": "#afeeee",
+      "star": null,
+      "comment": ""
+    },
+    {
+      "id": 13,
+      "emp_id": 6,
+      "book_id": 5,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "アプリ開発について学ぶことができた。HTMLとCSSの基本から応用まで、非常に分かりやすい解説だった。"
+    },
+    {
+      "id": 14,
+      "emp_id": 6,
+      "book_id": 6,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "NGを学ぶことで正解に近づける。デザインの基本について再確認できる良書。"
+    },
+    {
+      "id": 15,
+      "emp_id": 6,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "AIの進化と共に変わる営業の在り方について理解できる。未来の営業に向けた示唆に富んだ一冊。"
+    },
+    {
+      "id": 16,
+      "emp_id": 6,
+      "book_id": 9,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "営業の基本から応用まで、豊富な実例を交えて解説されており、実践的な視点が得られる。"
+    },
+    {
+      "id": 17,
+      "emp_id": 7,
+      "book_id": 6,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 3,
+      "comment": "Webデザインの奥深さを知り、アプリ開発においてユーザビリティ向上の手法を習得しました。"
+    },
+    {
+      "id": 18,
+      "emp_id": 7,
+      "book_id": 7,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "デザインの不可解な要素に気づき、良いデザインの要素を把握しました。"
+    },
+    {
+      "id": 19,
+      "emp_id": 7,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 4,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": 4,
+      "comment": "AI時代における営業活動の新たな可能性に驚き、クリエイティブな視点で営業にアプローチすることを学びました。"
+    },
+    {
+      "id": 20,
+      "emp_id": 7,
+      "book_id": 9,
+      "readStatus": "完了",
+      "readYear": 5,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": 4,
+      "comment": "営業の心理を理解し、クライアントとのコミュニケーションスキル向上に役立ちました。"
+    },
+    {
+      "id": 21,
+      "emp_id": 8,
+      "book_id": 4,
+      "readStatus": "完了",
+      "readYear": 7,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "人月という単位についての洞察を深め、プロジェクト管理においての新たな視点を得ました。"
+    },
+    {
+      "id": 22,
+      "emp_id": 8,
+      "book_id": 10,
+      "readStatus": "完了",
+      "readYear": 8,
+      "readJob": "エンジニア",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "コンサルタントとしてのスキル向上に寄与し、技術アドバイスの人間学に関する知識が深まりました。"
+    },
+    {
+      "id": 23,
+      "emp_id": 9,
+      "book_id": 6,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "デザインにおける優れた手法やテクニックを学び、実践に役立てました。"
+    },
+    {
+      "id": 24,
+      "emp_id": 9,
+      "book_id": 5,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "Webデザインの要素や原則を理解し、クリエイティブなデザインに挑戦しました。"
+    },
+    {
+      "id": 25,
+      "emp_id": 9,
+      "book_id": 7,
+      "readStatus": "完了",
+      "readYear": 3,
+      "readJob": "デザイナー",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "ユーザビリティの向上につながるデザイン手法やプロセスを実践しました。"
+    },
+    {
+      "id": 26,
+      "emp_id": 9,
+      "book_id": 3,
+      "readStatus": "進行中",
+      "readYear": 5,
+      "readJob": "デザイナー",
+      "color": "#afeeee",
+      "star": null,
+      "comment": ""
+    },
+    {
+      "id": 27,
+      "emp_id": 10,
+      "book_id": 8,
+      "readStatus": "完了",
+      "readYear": 1,
+      "readJob": "営業",
+      "color": "#ffc0cb",
+      "star": 4,
+      "comment": "新たな営業手法や成功事例について学びながら、実践に取り入れられた。"
+    },
+    {
+      "id": 28,
+      "emp_id": 10,
+      "book_id": 9,
+      "readStatus": "完了",
+      "readYear": 2,
+      "readJob": "営業",
+      "color": "#ffc0cb",
+      "star": 5,
+      "comment": "営業戦略の新しい視点を得ることができ、実践に役立てることができました。"
+    },
+    {
+      "id": 29,
+      "emp_id": 10,
+      "book_id": 10,
+      "readStatus": "進行中",
+      "readYear": 3,
+      "readJob": "営業",
+      "color": "#afeeee",
+      "star": null,
+      "comment": ""
+    }
+  ]
+}
