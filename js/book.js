@@ -12,7 +12,6 @@ const book = Vue.createApp({
         rentButtonText: '貸出',
         returnButtonText: '返却',
         recordList:[],
-        rentalList:[1],
       };
 
       
@@ -20,8 +19,6 @@ const book = Vue.createApp({
     mounted() {
       var params = new URLSearchParams(window.location.search);
       this.bookId = parseInt(params.get('id'));
-      bookList = this.rentalList;
-      console.log(bookList);
 
       fetch(`http://localhost:3000/books`) 
         .then(response => response.json())
@@ -29,14 +26,14 @@ const book = Vue.createApp({
           const matchingBook = data.find(book => book.id === this.bookId);
           if (matchingBook) {
             this.book = matchingBook;
-          const hasBook = bookList.includes(this.bookId);
-          console.log(hasBook);
 
           if (matchingBook.status === "貸出可能"){
             this.canRent = true;
+            this.canReturn = false;
           }
-          if(hasBook === true && matchingBook.status === "貸出不可"){
+          if(matchingBook.status === "貸出不可"){
             this.canReturn  = true;
+            this.canRent = false;
           }
 
           } else {
@@ -191,7 +188,7 @@ const book = Vue.createApp({
 
           this.canRent = false;
           this.canReturn = true; 
-     
+          
           fetch(`http://localhost:3000/books/${this.bookId}/`, {
             method: 'PUT',
             headers: {
@@ -218,8 +215,7 @@ const book = Vue.createApp({
               return response.json();
             })
             .then(data => {
-              console.log('Successfully deleted:', data);
-              rentalBook.push(this.bookId);
+              
             })
             .catch(error => {
               console.error('Error:', error);
@@ -265,7 +261,6 @@ const book = Vue.createApp({
             })
             .then(data => {
               console.log('Successfully deleted:', data);
-              rentalList = rentalList.filter(item => item !== this.bookId);
             })
             .catch(error => {
               console.error('Error:', error);
