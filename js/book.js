@@ -6,12 +6,13 @@ const book = Vue.createApp({
         employees: [],
         bookId:null,
         canRegister: true,
-        canRent: null,
+        canRent: false,
         canReturn: false,
         registerButtonText: '＋リストに追加',
         rentButtonText: '貸出',
         returnButtonText: '返却',
         recordList:[],
+        rentalList:[1],
       };
 
       
@@ -19,6 +20,8 @@ const book = Vue.createApp({
     mounted() {
       var params = new URLSearchParams(window.location.search);
       this.bookId = parseInt(params.get('id'));
+      bookList = this.rentalList;
+      console.log(bookList);
 
       fetch(`http://localhost:3000/books`) 
         .then(response => response.json())
@@ -26,13 +29,16 @@ const book = Vue.createApp({
           const matchingBook = data.find(book => book.id === this.bookId);
           if (matchingBook) {
             this.book = matchingBook;
-            if (matchingBook.status === "貸出可能") {
-              this.canRent = true;
-              this.canReturn = false;
-            } else {
-              this.canRent = false;
-              this.canReturn = true;
-            }
+          const hasBook = bookList.includes(this.bookId);
+          console.log(hasBook);
+
+          if (matchingBook.status === "貸出可能"){
+            this.canRent = true;
+          }
+          if(hasBook === true && matchingBook.status === "貸出不可"){
+            this.canReturn  = true;
+          }
+
           } else {
             console.error('Book not found.');
           }          
@@ -41,39 +47,36 @@ const book = Vue.createApp({
           console.error('Error fetching data:', error);
         });
 
-        fetch(`http://localhost:3000/records`) 
-        .then(response => response.json())
-        .then(data => {
-          const Records = data.filter(records => records.comment !== "");
-          const matchingRecords = Records.filter(records => records.book_id === this.bookId);
-          if (matchingRecords.length > 0 ) {
-            this.records = matchingRecords;
-            // if (matchingRecords[0].emp_id === 1) {
-            //   this.canReturn = true;
-            //   this.canRent = false;
-            // } else {
-            //   this.canReturnt = false;
-            // }
-            if (matchingRecords[0].emp_id === 1) {
-              this.canRegister = false;
-            }
-          } else {
-            console.error('Record not found.');
-          }
-        })
-        .catch(error => {
-          console.error('Error fetching data:', error);
-        });
-
+        // fetch(`http://localhost:3000/records`) 
+        // .then(response => response.json())
+        // .then(data => {
+        //   const Records = data.filter(records => records.comment !== "");
+        //   const matchingRecords = Records.filter(records => records.emp_id === 1);
+        //   if (matchingRecords.length > 0 ) {
+        //     this.records = matchingRecords;
+        //     // if (matchingRecords[0].emp_id === 1) {
+        //     //   this.canReturn = true;
+        //     //   this.canRent = false
+        //     // } else {
+        //     //   this.canReturnt = false;
+        //     // }
+        //     if (matchingRecords[0].emp_id === 1) {
+        //       this.canRegister = false;
+        //     }
+        //   } else {
+        //     console.error('Record not found.');
+        //   }
+        // })
+        // .catch(error => {
+        //   console.error('Error fetching data:', error);
+        // });
+      
+        //従業員コメントの名前を表示するための
         fetch(`http://localhost:3000/employees/`)
         .then(response => response.json())
         .then(data => {
-            // this.recordList = data.goals[0].recordList;
             this.employees = data;
         })
-
-        
-        
       },
       
 
@@ -96,22 +99,23 @@ const book = Vue.createApp({
           return employee ? employee.user_name : 'Unknown';
         },
 
-        toggleRegistration() {
-          if (this.canRegister) {
-            this.registerList();
-          } else {
-            this.deleteRecord();
-          }
-        },
+        // toggleRegistration() {
+        //   if (this.canRegister) {
+        //     this.registerList();
+        //   } else {
+        //     this.deleteRecord();
+        //   }
+        // },
 
-        registerList() {
-          this.canRegister = !this.canRegister;//canRegisterをfalseにして
-          this.registerButtonText = this.canRegister ? '＋リストに追加' : 'リストに追加済';
-        },
+        // registerList() {
+        //   this.canRegister = !this.canRegister;//canRegisterをfalseにして
+        //   this.registerButtonText = this.canRegister ? '＋リストに追加' : 'リストに追加済';
+        // },
         
-        deleteRecord() {
-        },
+        // deleteRecord() {
+        // },
 
+        //本を借りるＡＰＩ
         rentalBook() {
           var result = window.confirm('この本を予約します。\r\nよろしいですか。')
           if(!result){
@@ -120,9 +124,7 @@ const book = Vue.createApp({
 
           this.canRent = false;
           this.canReturn = true; 
-
-          
-
+     
           fetch(`http://localhost:3000/books/${this.bookId}/`, {
             method: 'PUT',
             headers: {
@@ -150,12 +152,15 @@ const book = Vue.createApp({
             })
             .then(data => {
               console.log('Successfully deleted:', data);
+              rentalBook.push(this.bookId);
             })
             .catch(error => {
               console.error('Error:', error);
             });
 
         },
+
+        //本を返すＡＰＩ
         returnBook() {
 
           var result = window.confirm('この本を返却します。\r\n借りている本であることを確認してください。')
@@ -165,7 +170,7 @@ const book = Vue.createApp({
 
           this.canRent = true; 
           this.canReturn = false; 
-
+       
           fetch(`http://localhost:3000/books/${this.bookId}/`, {
             method: 'PUT',
             headers: {
@@ -193,10 +198,11 @@ const book = Vue.createApp({
             })
             .then(data => {
               console.log('Successfully deleted:', data);
+              rentalList = rentalList.filter(item => item !== this.bookId);
             })
             .catch(error => {
               console.error('Error:', error);
-            });
+            });   
         }
     },
   });
