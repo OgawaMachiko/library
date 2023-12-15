@@ -88,11 +88,11 @@
           "recordList": [
             {
               "id": 1,
-              "record_id": 6
+              "record_id": 7
             },
             {
               "id": 2,
-              "record_id": 7
+              "record_id": 8
             }
           ]
         }
@@ -181,7 +181,7 @@
       "goals": [
         {
           "id": 1,
-          "goal_name": "デザイナーとしてのキャリアアップ",
+          "goal_name": "デザイナーへのキャリアチェンジ",
           "recordList": [
             {
               "id": 1,
@@ -756,7 +756,7 @@
       "book_id": 2,
       "readStatus": "完了",
       "readYear": 4,
-      "readJob": "エンジニア",
+      "readJob": "デザイナー",
       "color": "#ffc0cb",
       "star": null,
       "comment": "サービスデザインの考え方について0から学べる良書でした。"
@@ -767,7 +767,7 @@
       "book_id": 4,
       "readStatus": "完了",
       "readYear": 5,
-      "readJob": "営業",
+      "readJob": "エンジニア",
       "color": "#ffc0cb",
       "star": 3,
       "comment": "プロジェクト管理について理解を深められた。"
@@ -843,7 +843,7 @@
       "emp_id": 2,
       "book_id": 9,
       "readStatus": "進行中",
-      "readYear": 5,
+      "readYear": 6,
       "readJob": "エンジニア",
       "color": "#afeeee",
       "star": null,
@@ -877,7 +877,7 @@
       "book_id": 8,
       "readStatus": "完了",
       "readYear": 5,
-      "readJob": "",
+      "readJob": "エンジニア",
       "color": "#ffc0cb",
       "star": 5,
       "comment": "AIの進化と共に変わる営業の在り方について理解できる。未来の営業に向けた示唆に富んだ一冊。"
@@ -888,7 +888,7 @@
       "book_id": 9,
       "readStatus": "完了",
       "readYear": 5,
-      "readJob": "",
+      "readJob": "エンジニア",
       "color": "#ffc0cb",
       "star": 5,
       "comment": "営業の基本から応用まで、豊富な実例を交えて解説されており、実践的な視点が得られる。"
@@ -997,7 +997,7 @@
       "emp_id": 9,
       "book_id": 3,
       "readStatus": "進行中",
-      "readYear": 4,
+      "readYear": 5,
       "readJob": "デザイナー",
       "color": "#afeeee",
       "star": null,
