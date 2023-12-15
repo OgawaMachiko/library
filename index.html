@@ -38,7 +38,8 @@
             <td><div class="bookStatus" :style="{backgroundColor:getColor(record.record_id)}">{{ getStatus(record.record_id) }}</div></td>
             <td>{{ getYear(record.record_id) }} 年目</td>
             <td>{{ getJob(record.record_id) }}</td>
-            <td>☆ {{ getStar(record.record_id) }}</td>
+            <td v-if="getStar(record.record_id)">☆ {{ getStar(record.record_id) }}</td>
+            <td v-else></td>
             <td class="booktd">{{ getComment(record.record_id) }}</td>
             <!-- <td v-if="getStatus(record.record_id) == '予定' && employeeId === 1" v-on:click="handleDeleteClick(record.id,$event)" class="delete"> × </td>
             <td v-else-if="employeeId === 1" class="hyphen"> - </td> -->
