@@ -100,6 +100,73 @@ const book = Vue.createApp({
           // （要対応）JSONのrecordに今見てるbookを追加、
           
           this.registerButtonText = this.canRegister ? '＋リストに追加' : 'リストに追加済';
+          
+          const newList = this.recordList
+          const dataLen = this.recordList.length + 1
+          const dataRec = this.recordList.record_id
+          const data = { "id":dataLen, "record_id":1 };
+          newList.push(data);
+
+          fetch(`http://localhost:3000/employees/1/`, {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              id:1,
+              user_name: "石倉加菜子",
+              department:"テレコムソリューション事業部",
+              year:1,
+              job:"エンジニア",
+              goals:[
+                { id:1, goal_name:"デザインエンジニアへのキャリアチェンジ", 
+                  recordList:newList,
+                }
+              ]
+            }),
+          })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+          })
+          .then(data => {
+            console.log('Successfully deleted:', data);
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
+
+          fetch(`http://localhost:3000/records/`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              id: this.records.length+1,
+              emp_id: 1,
+              book_id: this.bookId,
+              readStatus:"予定",
+              readYear:1,
+              readJob:"エンジニア",
+              color: "#afeeee",
+              star:0,
+              comment: ""
+            }),
+          })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+          })
+          .then(data => {
+            console.log('Successfully Insert:', data);
+          })
+          .catch(error => {
+            console.error('Error:', error);
+          });
         },
         
         deleteRecord() {
