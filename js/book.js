@@ -44,7 +44,8 @@ const book = Vue.createApp({
         fetch(`http://localhost:3000/records`) 
         .then(response => response.json())
         .then(data => {
-          const matchingRecords = data.filter(records => records.book_id === this.bookId);
+          const Records = data.filter(records => records.comment !== "");
+          const matchingRecords = Records.filter(records => records.book_id === this.bookId);
           if (matchingRecords.length > 0 ) {
             this.records = matchingRecords;
             // if (matchingRecords[0].emp_id === 1) {
